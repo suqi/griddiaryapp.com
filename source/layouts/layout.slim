@@ -3,14 +3,19 @@ html
   head
     meta charset="utf-8"
 
-    title SITE | #{current_page.data.title}
+    title Grid Diary - The simplest app to get started with keeping a diary.
 
-    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    meta name="apple-itunes-app" content="app-id=597077261"
+    meta name="description" content="Grid Diary - The simplest app to get started with keeping a diary."
+    meta name="keywords" content="grid diary, grid, diary, question, journal, daybreak, thought, feeling, writing, note, memory, archive, success, positive, habit, daily"
+    meta name="author" content="Sumi Interactive"
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
 
+    /= stylesheet_link_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'
     = stylesheet_link_tag "application", media: 'all'
 
   body[class="#{page_classes}-page"]
     = yield
 
     = javascript_include_tag  "application"
-
+    /= javascript_include_tag 'netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'

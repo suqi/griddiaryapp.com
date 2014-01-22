@@ -1,5 +1,7 @@
 require 'slim'
 
+activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
+
 activate :livereload
 
 set :css_dir, 'stylesheets'

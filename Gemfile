@@ -9,3 +9,4 @@ gem "middleman-livereload", "~> 3.1.0"
 
 gem 'slim'
 gem "middleman-deploy"
+gem "middleman-autoprefixer"
