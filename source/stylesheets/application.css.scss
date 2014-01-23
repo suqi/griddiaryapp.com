@@ -1,5 +1,4 @@
 /*
- *= require_tree .
  *= require_self
  */
 
@@ -30,21 +29,44 @@ body {
     & > div {
       min-height: 100px;
     }
+
+    .home-hero-intro-logo {
+      background: image-url('icon.png') no-repeat;
+      width: 339px;
+      height: 114px;
+    }
+
+    .home-hero-intro-app_store_link {
+      a {
+        display: inline-block;
+        background: image-url('icon-app_store.png') no-repeat;
+        width: 252px;
+        height: 72px;
+      }
+    }
   }
   .home-hero-screenshot {
     flex: 1;
+    align-self: flex-end;
+
+    .home-hero-screenshot-iphone {
+      background: image-url('iPhone.png') no-repeat;
+      width: 376px;
+      height: 620px;
+    }
   }
 }
 
 .home-features {
-  height: 768px;
-  padding: 0 10%;
+  padding: 100px 10%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 
   .home-features-feature {
     flex: 1 30%;
+    height: 200px;
+    text-align: center;
   }
 }
 
@@ -62,12 +84,13 @@ body {
 }
 
 .home-footer {
-  height: 300px;
+  padding: 50px 0 0 0;
   background-color: #d4d4d6;
   text-align: center;
 
   .footer-social {
-    display: flex;
-    justify-content: center;
+    a {
+      margin: 0 10px;
+    }
   }
 }
