@@ -1,0 +1,56 @@
+@import 'media-queries';
+
+@include min-screen(568px) {
+  .index-page {
+    // max-width: 1200px;
+    // margin: 0 auto;
+
+    .index-hero {
+      padding: 0 10vw;
+
+      .index-hero-intro {
+        flex: 1;
+        min-height: 770px;
+
+        .index-hero-intro-logo {
+        }
+
+        .index-hero-intro-slogan {
+        }
+
+        .index-hero-intro-app_store_link {
+        }
+      }
+      .index-hero-screenshot {
+        flex: 1;
+        background-position: right;
+      }
+    }
+
+    .index-features {
+      height: 770px;
+      padding: 0 5vw;
+
+      .index-features-feature {
+      }
+    }
+
+    .index-video {
+      height: 700px;
+    }
+
+    .index-quotes {
+      min-height: 400px;
+    }
+
+    .index-footer {
+      min-height: 400px;
+
+      .footer-social {
+      }
+
+      .footer-links {
+      }
+    }
+  }
+}

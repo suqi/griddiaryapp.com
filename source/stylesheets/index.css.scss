@@ -1,12 +1,9 @@
 .index-page {
   display: flex;
   flex-flow: column nowrap;
-  // max-width: 1200px;
-  // margin: 0 auto;
 
   .index-hero {
     background-color: #284a91;
-    padding: 0 10%;
     display: flex;
     flex-flow: row nowrap;
     background: image-url('top-bg.png') no-repeat;
@@ -14,8 +11,6 @@
     background-size: cover;
 
     .index-hero-intro {
-      height: 770px;
-      flex: 6;
       display: flex;
       flex-flow: column nowrap;
       align-items: flex-start;
@@ -43,23 +38,19 @@
       }
     }
     .index-hero-screenshot {
-      flex: 4;
       align-self: flex-end;
 
-      .index-hero-screenshot-iphone {
-        background: image-url('iPhone.png') no-repeat;
-        width: 376px;
-        height: 620px;
-      }
+      background: image-url('iPhone.png') no-repeat;
+      width: 376px;
+      height: 620px;
     }
   }
 
   .index-features {
-    padding: 5vw;
-    height: 770px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
     color: #5b6d7c;
 
     .index-features-feature {
@@ -79,17 +70,15 @@
   }
 
   .index-video {
-    height: 700px;
     background-color: #7ccad5;
     text-align: center;
   }
 
   .index-quotes {
-    height: 400px;
-    padding: 0 5vw;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: center;
 
     blockquote {
       display: flex;
@@ -123,7 +112,6 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    height: 400px;
     background-color: #d4d4d6;
     text-align: center;
 
