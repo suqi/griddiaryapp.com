@@ -1,0 +1,145 @@
+.index-page {
+  display: flex;
+  flex-flow: column nowrap;
+  // max-width: 1200px;
+  // margin: 0 auto;
+
+  .index-hero {
+    background-color: #284a91;
+    padding: 0 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    background: image-url('top-bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .index-hero-intro {
+      height: 770px;
+      flex: 6;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      justify-content: center;
+
+      .index-hero-intro-logo {
+        background: image-url('icon.png') no-repeat;
+        width: 339px;
+        height: 114px;
+      }
+
+      .index-hero-intro-slogan {
+        padding: 70px 0;
+        font-size: 40px;
+        color: white;
+      }
+
+      .index-hero-intro-app_store_link {
+        a {
+          display: inline-block;
+          background: image-url('icon-app_store.png') no-repeat;
+          width: 252px;
+          height: 72px;
+        }
+      }
+    }
+    .index-hero-screenshot {
+      flex: 4;
+      align-self: flex-end;
+
+      .index-hero-screenshot-iphone {
+        background: image-url('iPhone.png') no-repeat;
+        width: 376px;
+        height: 620px;
+      }
+    }
+  }
+
+  .index-features {
+    padding: 5vw;
+    height: 770px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    color: #5b6d7c;
+
+    .index-features-feature {
+      flex: 1 30%;
+      height: 200px;
+      text-align: center;
+
+      h2 {
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .index-video {
+    height: 700px;
+    background-color: #7ccad5;
+    text-align: center;
+  }
+
+  .index-quotes {
+    height: 400px;
+    padding: 0 5vw;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    blockquote {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+
+      p {
+        font-family: 'Poly', serif;
+        font-size: 20px;
+        color: #636363;
+
+        &:before {
+          content: "“";
+        }
+
+        &:after {
+          content: "”";
+        }
+      }
+
+      small {
+        font-family: 'Poly', serif;
+        font-size: 24px;
+        color: #4a4a4a;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .index-footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 400px;
+    background-color: #d4d4d6;
+    text-align: center;
+
+    .footer-social {
+      a {
+        margin: 0 10px;
+      }
+    }
+
+    .footer-links {
+      color: #4b4b4b;
+
+      a {
+        color: black;
+      }
+    }
+  }
+
+}
