@@ -28,7 +28,7 @@ body {
   background-size: cover;
 
   .home-hero-intro {
-    height: 700px;
+    height: 770px;
     flex: 6;
     display: flex;
     flex-flow: column nowrap;
@@ -69,7 +69,8 @@ body {
 }
 
 .home-features {
-  padding: 100px 10%;
+  padding: 5vw;
+  height: 770px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -98,7 +99,8 @@ body {
 }
 
 .home-quotes {
-  padding: 120px 10%;
+  height: 400px;
+  padding: 0 5vw;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -132,7 +134,10 @@ body {
 }
 
 .home-footer {
-  padding: 50px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 400px;
   background-color: #d4d4d6;
   text-align: center;
 
