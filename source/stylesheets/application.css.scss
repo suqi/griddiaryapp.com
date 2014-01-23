@@ -14,30 +14,37 @@ body {
 .home {
   display: flex;
   flex-flow: column nowrap;
+  // max-width: 1200px;
+  // margin: 0 auto;
 }
 
 .home-hero {
-  height: 768px;
   background-color: #284a91;
   padding: 0 10%;
   display: flex;
   flex-flow: row nowrap;
+  background: image-url('top-bg.png') no-repeat;
+  background-position: center;
+  background-size: cover;
 
   .home-hero-intro {
-    flex: 1;
+    height: 700px;
+    flex: 6;
     display: flex;
     flex-flow: column nowrap;
-    align-items: strech;
+    align-items: flex-start;
     justify-content: center;
-
-    & > div {
-      min-height: 100px;
-    }
 
     .home-hero-intro-logo {
       background: image-url('icon.png') no-repeat;
       width: 339px;
       height: 114px;
+    }
+
+    .home-hero-intro-slogan {
+      padding: 70px 0;
+      font-size: 40px;
+      color: white;
     }
 
     .home-hero-intro-app_store_link {
@@ -50,7 +57,7 @@ body {
     }
   }
   .home-hero-screenshot {
-    flex: 1;
+    flex: 4;
     align-self: flex-end;
 
     .home-hero-screenshot-iphone {
@@ -87,11 +94,11 @@ body {
 .home-video {
   height: 700px;
   background-color: #7ccad5;
+  text-align: center;
 }
 
 .home-quotes {
-  height: 300px;
-  padding: 0 10%;
+  padding: 120px 10%;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
