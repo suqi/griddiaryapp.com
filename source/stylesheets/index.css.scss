@@ -1,3 +1,16 @@
+@import 'media-queries';
+
+@mixin background-image($image_name, $width, $height) {
+  width: $width;
+  height: $height;
+  background-image: image-url("#{$image_name}.png");
+  background-repeat: no-repeat;
+  background-size: $width, $height;
+  @include hdpi {
+    background-image: image-url("#{$image_name}@2x.png");
+  }
+}
+
 .index-page {
   display: flex;
   flex-flow: column nowrap;
@@ -17,9 +30,7 @@
       justify-content: center;
 
       .index-hero-intro-logo {
-        background: image-url('icon.png') no-repeat;
-        width: 339px;
-        height: 114px;
+        @include background-image('icon', 339px, 114px);
       }
 
       .index-hero-intro-slogan {
@@ -31,18 +42,14 @@
       .index-hero-intro-app_store_link {
         a {
           display: inline-block;
-          background: image-url('icon-app_store.png') no-repeat;
-          width: 252px;
-          height: 72px;
+          @include background-image('icon-app_store', 252px, 72px);
         }
       }
     }
     .index-hero-screenshot {
       align-self: flex-end;
 
-      background: image-url('iPhone.png') no-repeat;
-      width: 376px;
-      height: 620px;
+      @include background-image('iPhone', 376px, 620px);
     }
   }
 
@@ -56,11 +63,33 @@
     .index-features-feature {
       flex: 1 30%;
       height: 200px;
-      text-align: center;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+
+      .index-features-feature-grid {
+        @include background-image('icon-grid', 60px, 60px);
+      }
+      .index-features-feature-reading {
+        @include background-image('icon-reading', 60px, 60px);
+      }
+      .index-features-feature-portrait_and_landscape {
+        @include background-image('icon-portrait_and_landscape', 60px, 60px);
+      }
+      .index-features-feature-library {
+        @include background-image('icon-library', 60px, 60px);
+      }
+      .index-features-feature-icloud {
+        @include background-image('icon-icloud', 60px, 60px);
+      }
+      .index-features-feature-passcode {
+        @include background-image('icon-passcode', 60px, 60px);
+      }
 
       h2 {
         font-weight: bold;
         font-size: 24px;
+        text-align: center;
       }
 
       p {
