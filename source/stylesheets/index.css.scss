@@ -145,8 +145,18 @@
     text-align: center;
 
     .footer-social {
+      display: flex;
+      justify-content: center;
+
       a {
         margin: 0 10px;
+
+        &.footer-social-facebook {
+          @include background-image('icon-facebook', 64px, 64px);
+        }
+        &.footer-social-twitter {
+          @include background-image('icon-twitter', 64px, 64px);
+        }
       }
     }
 
