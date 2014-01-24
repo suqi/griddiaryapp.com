@@ -18,7 +18,12 @@
           width: 260px;
         }
 
-        .index-hero-intro-app_store_link {
+        .index-hero-intro-links {
+          flex-flow: column nowrap;
+
+          .index-hero-intro-links-video {
+            margin-top: 10px;
+          }
         }
       }
       .index-hero-screenshot {

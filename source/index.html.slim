@@ -2,48 +2,53 @@
   .index-hero-intro
     .index-hero-intro-logo
     .index-hero-intro-slogan The <b>simplest</b> way to get started with keeping a diary.
-    .index-hero-intro-app_store_link = partial 'app_store_link'
+    .index-hero-intro-links
+      = link_to '', 'https://itunes.apple.com/us/app/grid-diary-simplest-way-to/id597077261?mt=8',
+        class: 'index-hero-intro-links-app_store'
+      = link_to '', 'javascript:void(0)',
+        data: { behavior: 'load-video' }, class: 'index-hero-intro-links-video'
+
   .index-hero-screenshot
 
-.index-features
-  .index-features-feature
-    .index-features-feature-grid
-    h2 Unique grid diary format
-    p duis mollis, est non
-  .index-features-feature
-    .index-features-feature-reading
-    h2 Reading mode
-    p duis mollis, est non
-  .index-features-feature
-    .index-features-feature-portrait_and_landscape
-    h2 Beautifully designed in both portrait and landscape
-  .index-features-feature
-    .index-features-feature-library
-    h2 Prompt library for writing inspirations
-    p duis mollis, est non
-  .index-features-feature
-    .index-features-feature-icloud
-    h2 Data sync via iCloud
-    p duis mollis, est non
-  .index-features-feature
-    .index-features-feature-passcode
-    h2 Passcode lock for privacy
-    p duis
-.index-video
-  h1 Video
+/.index-features
+/  .index-features-feature
+/    .index-features-feature-grid
+/    h2 Unique grid diary format
+/    p duis mollis, est non
+/  .index-features-feature
+/    .index-features-feature-reading
+/    h2 Reading mode
+/    p duis mollis, est non
+/  .index-features-feature
+/    .index-features-feature-portrait_and_landscape
+/    h2 Beautifully designed in both portrait and landscape
+/  .index-features-feature
+/    .index-features-feature-library
+/    h2 Prompt library for writing inspirations
+/    p duis mollis, est non
+/  .index-features-feature
+/    .index-features-feature-icloud
+/    h2 Data sync via iCloud
+/    p duis mollis, est non
+/  .index-features-feature
+/    .index-features-feature-passcode
+/    h2 Passcode lock for privacy
+/    p duis
+/.index-video
+/  h1 Video
 
-.index-quotes
-  blockquote
-    p
-      i Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    small ommodo lu
-  blockquote
-    p
-      i Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    small ommodo lu
-  blockquote
-    p
-      i Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    small ommodo lu
+/.index-quotes
+/  blockquote
+/    p
+/      i Lorem ipsum dolor sit amet, consectetur adipiscing elit
+/    small ommodo lu
+/  blockquote
+/    p
+/      i Lorem ipsum dolor sit amet, consectetur adipiscing elit
+/    small ommodo lu
+/  blockquote
+/    p
+/      i Lorem ipsum dolor sit amet, consectetur adipiscing elit
+/    small ommodo lu
 .index-footer
   = partial 'footer'

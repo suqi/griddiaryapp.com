@@ -39,17 +39,33 @@
         color: white;
       }
 
-      .index-hero-intro-app_store_link {
+      .index-hero-intro-links {
+        display: flex;
+
         a {
           display: inline-block;
+        }
+
+        .index-hero-intro-links-app_store {
+          @include background-image('icon-app_store', 252px, 72px);
+        }
+        .index-hero-intro-links-video {
           @include background-image('icon-app_store', 252px, 72px);
         }
       }
+
     }
     .index-hero-screenshot {
       align-self: flex-end;
 
       @include background-image('iPhone', 376px, 620px);
+    }
+    .index-hero-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 

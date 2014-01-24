@@ -7,18 +7,17 @@
 
     .index-hero {
       padding: 0 10vw;
+      min-height: 770px;
 
       .index-hero-intro {
         flex: 1;
-        min-height: 770px;
 
-        .index-hero-intro-logo {
-        }
+        .index-hero-intro-links {
+          flex-flow: row nowrap;
 
-        .index-hero-intro-slogan {
-        }
-
-        .index-hero-intro-app_store_link {
+          .index-hero-intro-links-video {
+            margin-left: 10px;
+          }
         }
       }
       .index-hero-screenshot {

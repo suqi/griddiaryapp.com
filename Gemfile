@@ -11,3 +11,4 @@ gem 'slim'
 gem "middleman-deploy"
 gem "middleman-autoprefixer"
 gem "middleman-imageoptim", "~> 0.1.4"
+gem "jquery-middleman"
