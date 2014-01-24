@@ -21,10 +21,6 @@
 
         .index-hero-intro-links {
           flex-flow: column nowrap;
-
-          .index-hero-intro-links-video {
-            margin-top: 10px;
-          }
         }
       }
       .index-hero-screenshot {
@@ -43,11 +39,6 @@
         flex: 1 100%;
         padding: 0 1vh;
       }
-    }
-
-    .index-video {
-      width: 90%;
-      height: 50%;
     }
 
     .index-quotes {
