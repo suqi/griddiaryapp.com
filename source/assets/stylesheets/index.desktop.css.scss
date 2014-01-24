@@ -10,16 +10,12 @@
 
       .index-hero-intro {
         flex: 1;
-
         .index-hero-intro-links {
           flex-flow: row nowrap;
         }
       }
       .index-hero-screenshot {
-        flex: 1;
         align-self: flex-end;
-
-        background-position: right;
       }
     }
 

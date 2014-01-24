@@ -24,6 +24,7 @@
     min-height: 770px;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
 
     .index-hero-intro {
       display: flex;
@@ -60,8 +61,51 @@
 
     }
     .index-hero-screenshot {
-      min-height: 620px;
-      @include background-image('iPhone', 376px, 620px);
+      min-height: 675px;
+      @include background-image('iPhone', 375px, 675px);
+
+      .screenshots-container {
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        margin: 0 27px 0 34px;
+      }
+
+      .screenshots {
+        animation: hscroll 20s infinite;
+        width: 2240px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100%;
+
+        & > div {
+          background-position: bottom;
+        }
+      }
+
+      .screenshot-1 {
+        @include background-image('screenshots/1', 320px, 568px);
+      }
+      .screenshot-2 {
+        @include background-image('screenshots/2', 320px, 568px);
+      }
+      .screenshot-3 {
+        @include background-image('screenshots/3', 320px, 568px);
+      }
+      .screenshot-4 {
+        @include background-image('screenshots/4', 320px, 568px);
+      }
+      .screenshot-5 {
+        @include background-image('screenshots/5', 320px, 568px);
+      }
+      .screenshot-6 {
+        @include background-image('screenshots/6', 320px, 568px);
+      }
+      .screenshot-7 {
+        @include background-image('screenshots/7', 320px, 568px);
+      }
     }
   }
 

@@ -1,0 +1,10 @@
+@mixin hscroll($width) {
+  @keyframes hscroll {
+    0%, 18.75%  { margin-left: 0 }
+    25%, 43.75% { margin-left: - $width; }
+    50%, 68.75% { margin-left: - $width*2; }
+    75%, 93.75% { margin-left: - $width*3; }
+    100%  { margin-left: 0 }
+  }
+}
+@include hscroll(320px);
