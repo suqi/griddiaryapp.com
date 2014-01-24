@@ -38,6 +38,10 @@
         padding: 70px 0;
         font-size: 40px;
         color: white;
+
+        p:nth-of-type(2) {
+          font-family: 'Poly', serif;
+        }
       }
 
       .index-hero-intro-links {
