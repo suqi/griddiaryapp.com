@@ -4,6 +4,9 @@
 
 window.WebFontConfig = {
   google: {
-    families: [ 'Lato:400,700,400italic:latin', 'Poly:400,400italic:latin' ]
+    families: [
+      'Lato:400,700:latin',
+      'Poly:400,400italic:latin',
+    ]
   }
 }
