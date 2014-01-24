@@ -14,15 +14,16 @@
 .index-page {
   display: flex;
   flex-flow: column nowrap;
+  background: image-url('top-bg.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
 
   .index-hero {
+    align-self: center;
     min-height: 770px;
-    background-color: #284a91;
     display: flex;
     flex-flow: row nowrap;
-    background: image-url('top-bg.png') no-repeat;
-    background-position: center;
-    background-size: cover;
 
     .index-hero-intro {
       display: flex;
