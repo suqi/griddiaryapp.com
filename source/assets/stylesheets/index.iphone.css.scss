@@ -5,6 +5,7 @@
 
     .index-hero {
       flex-flow: column nowrap;
+      min-height: 1540px;
 
       .index-hero-intro {
         flex: 6;
@@ -29,6 +30,8 @@
       .index-hero-screenshot {
         flex: 4;
         align-self: center;
+
+        background-position: bottom;
         zoom: 0.8;
       }
     }
@@ -43,6 +46,8 @@
     }
 
     .index-video {
+      width: 90%;
+      height: 50%;
     }
 
     .index-quotes {

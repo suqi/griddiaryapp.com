@@ -7,7 +7,6 @@
 
     .index-hero {
       padding: 0 10vw;
-      min-height: 770px;
 
       .index-hero-intro {
         flex: 1;
@@ -22,6 +21,8 @@
       }
       .index-hero-screenshot {
         flex: 1;
+        align-self: flex-end;
+
         background-position: right;
       }
     }
@@ -35,7 +36,8 @@
     }
 
     .index-video {
-      height: 700px;
+      width: 77vw;
+      height: 80vh;
     }
 
     .index-quotes {

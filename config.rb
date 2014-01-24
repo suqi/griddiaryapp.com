@@ -4,11 +4,10 @@ activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 
 activate :livereload
 
-set :css_dir, 'stylesheets'
-
-set :js_dir, 'javascripts'
-
-set :images_dir, 'images'
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
 
 # Build-specific configuration
 configure :build do
