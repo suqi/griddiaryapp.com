@@ -72,13 +72,17 @@
       }
 
       .screenshots {
-        animation: hscroll 20s infinite;
+        animation: hscroll steps(1, end) 20s infinite;
         width: 2240px;
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
         align-items: flex-end;
         height: 100%;
+
+        &:hover {
+          animation-play-state:paused;
+        }
 
         & > div {
           background-position: bottom;

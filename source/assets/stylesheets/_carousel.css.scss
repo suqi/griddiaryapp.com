@@ -1,10 +1,14 @@
-@mixin hscroll($width) {
+@mixin hscroll($width, $image_count) {
   @keyframes hscroll {
-    0%, 18.75%  { margin-left: 0 }
-    25%, 43.75% { margin-left: - $width; }
-    50%, 68.75% { margin-left: - $width*2; }
-    75%, 93.75% { margin-left: - $width*3; }
-    100%  { margin-left: 0 }
+    0 { margin-left: 0; }
+
+    $shift: $image_count - 1;
+
+    @for $i from 1 through ($shift) {
+      #{$i * 100/$shift * 1%} #{$i * 100/$shift * 1%} {
+        margin-left: 0 - $width * $i;
+      }
+    }
   }
 }
-@include hscroll(320px);
+@include hscroll(320px, 7);
