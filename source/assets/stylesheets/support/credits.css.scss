@@ -10,7 +10,7 @@ $border_color: #ececec;
 // mixins
 
 @mixin avatar-image($name) {
-  @include background-image("avatars/#{$name}", 65px, 65px);
+  @include background-image("/assets/images/avatars/#{$name}", 65px, 65px);
 }
 
 // fonts
