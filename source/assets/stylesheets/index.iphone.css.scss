@@ -5,7 +5,7 @@
 
     .index-hero {
       flex-flow: column nowrap;
-      min-height: 1540px;
+      min-height: 1400px;
 
       .index-hero-intro {
         flex: 1;
@@ -56,8 +56,6 @@
 
     .index-gallery {
       flex-flow: column nowrap;
-      justify-content: space-around;
-      min-height: 2000px;
     }
   }
 }
