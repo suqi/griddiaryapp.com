@@ -1,0 +1,47 @@
+@import 'media-queries';
+
+@include screen(768px, 1024px) {
+  .index-page {
+
+    .index-hero {
+      max-width: 720px;
+      min-height: 600px;
+
+      .index-hero-intro {
+        flex: 1;
+
+        .index-hero-intro-logo {
+          zoom: 0.8;
+        }
+
+        .index-hero-intro-slogan {
+          font-size: 28px;
+
+          p:nth-of-type(2) {
+            font-size: 18px;
+          }
+        }
+
+        .index-hero-intro-links {
+          flex-flow: column nowrap;
+        }
+      }
+      .index-hero-screenshot {
+        align-self: flex-end;
+
+        zoom: 0.8;
+      }
+    }
+
+    .index-footer {
+      padding: 2vh 0;
+      min-height: 300px;
+
+      .footer-social {
+      }
+
+      .footer-links {
+      }
+    }
+  }
+}

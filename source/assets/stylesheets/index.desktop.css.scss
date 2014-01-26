@@ -1,12 +1,13 @@
 @import 'media-queries';
 
-@include min-screen(568px) {
+@include min-screen(1024px) {
   .index-page {
     // max-width: 1200px;
     // margin: 0 auto;
 
     .index-hero {
       max-width: 1000px;
+      min-height: 770px;
 
       .index-hero-intro {
         flex: 1;
