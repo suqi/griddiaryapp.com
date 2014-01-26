@@ -1,0 +1,148 @@
+@import 'mixins/images';
+
+// variables
+
+$avatar_height: 65px;
+$avatar_width: 65px;
+$base_color: #7ad9de;
+$border_color: #ececec;
+
+// mixins
+
+@mixin avatar-image($name) {
+  @include background-image("avatars/#{$name}", 65px, 65px);
+}
+
+// fonts
+
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Serif'), local('NotoSerif'), url(http://themes.googleusercontent.com/static/fonts/notoserif/v1/eCpfeMZI7q4jLksXVRWPQ73hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(http://themes.googleusercontent.com/static/fonts/raleway/v6/cIFypx4yrWPDz3zOxk7hIQLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif|Raleway);
+
+// body
+
+section.credits {
+  max-width:400px;
+  margin:0 auto;
+
+  &>* {
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    height:45px;
+    width:100%;
+    border-bottom:1px solid $border_color;
+    margin-top:36px;
+
+    h2 {
+      margin-left:20px;
+      font-family:"Raleway";
+      color: $base_color;
+      font-size:21px;
+      font-weight: normal;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: column nowrap;
+
+    li {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      border-bottom:1px solid #ececec;
+      min-height:116px;
+    }
+  }
+
+  .avatar {
+    height: $avatar_height;
+    width: $avatar_width;
+    min-width:137px;
+    height:116px;
+    position:relative;
+    text-align:center;
+    float:left;
+
+    display:table;
+    text-align:center;
+
+    background-position:center;
+    background-repeat: no-repeat;
+
+    border-radius:75px;
+
+    &.avatar-kc {
+      @include avatar-image('kc');
+    }
+    &.avatar-bc {
+      @include avatar-image('bc');
+    }
+    &.avatar-lz {
+      @include avatar-image('lz');
+    }
+    &.avatar-cyx {
+      @include avatar-image('cyx');
+    }
+    &.avatar-vz {
+      @include avatar-image('vz');
+    }
+    &.avatar-jl {
+      @include avatar-image('jl');
+    }
+    &.avatar-xw {
+      @include avatar-image('xw');
+    }
+    &.avatar-sm {
+      @include avatar-image('sm');
+    }
+    &.avatar-jb {
+      @include avatar-image('jb');
+    }
+    &.avatar-jjjm {
+      @include avatar-image('jjjm');
+    }
+    &.avatar-ew {
+      @include avatar-image('ew');
+    }
+    &.avatar-hj {
+      @include avatar-image('hj');
+    }
+    &.avatar-sa {
+      @include avatar-image('sa');
+    }
+    &.avatar-jm {
+      @include avatar-image('jm');
+    }
+  }
+
+  .info {
+    padding-top:33px;
+    padding-bottom:33px;
+    .name {
+      font-family:"Noto Serif";
+      font-style:italic;
+      font-size:18px;
+    }
+    .description {
+      font-size:15px;
+      color:#7ad9de;
+      margin-top:5px;
+      font-family:"Raleway";
+    }
+  }
+}
