@@ -41,5 +41,15 @@
       .footer-links {
       }
     }
+
+    .index-gallery {
+      min-height: 200px;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+
+      a {
+        flex: 0 0 9%;
+      }
+    }
   }
 }

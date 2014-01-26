@@ -1,6 +1,7 @@
-//= require jquery
-//= require_tree .
-//= require_self
+#= require jquery
+#= require_tree ./vendor
+#= require_directory .
+#= require_self
 
 window.WebFontConfig = {
   google: {

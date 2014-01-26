@@ -53,5 +53,11 @@
       .footer-links {
       }
     }
+
+    .index-gallery {
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      min-height: 2000px;
+    }
   }
 }

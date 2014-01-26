@@ -195,7 +195,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    background-color: #f8f9fb;
+    background-color: #d4d4d6;
     text-align: center;
 
     .footer-social {
@@ -215,7 +215,7 @@
     }
 
     .footer-links {
-      color: #4b4b4b;
+      color: #6f6f6f;
 
       a {
         color: black;
@@ -223,4 +223,15 @@
     }
   }
 
+  .index-gallery {
+    display: flex;
+    align-items: center;
+    background: #f8f9fb;
+
+    a {
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
