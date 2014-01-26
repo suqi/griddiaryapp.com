@@ -112,7 +112,6 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 
 #cboxContent
 {
-  background: #fff;
   overflow: hidden;
 }
 
@@ -144,6 +143,7 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 
 #cboxCurrent
 {
+  visibility: hidden;
   position: absolute;
   bottom: 4px;
   left: auto;
@@ -162,6 +162,8 @@ ordered & tabbed in a way that represents the nesting of the generated HTML.
 /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
 #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose
 {
+  visibility: hidden;
+  display: none;
   border: 0;
   padding: 0;
   margin: 0;
