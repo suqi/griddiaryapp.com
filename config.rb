@@ -1,5 +1,7 @@
 require 'slim'
 
+page "/support/*", layout: "support"
+
 activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 
 activate :livereload
@@ -40,7 +42,7 @@ configure :build do
   activate :asset_hash
 
   # Use relative URLs
-  activate :relative_assets
+  # activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

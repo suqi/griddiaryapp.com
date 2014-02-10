@@ -1,4 +1,4 @@
-@import 'media-queries';
+@import 'mixins/media-queries';
 
 @include screen(320px, 568px) {
   .index-page {

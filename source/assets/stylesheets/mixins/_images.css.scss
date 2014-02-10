@@ -1,0 +1,12 @@
+@import 'mixins/media-queries';
+
+@mixin background-image($image_name, $width, $height) {
+  width: $width;
+  height: $height;
+  background-image: image-url("#{$image_name}.png");
+  background-repeat: no-repeat;
+  background-size: $width, $height;
+  @include hdpi {
+    background-image: image-url("#{$image_name}@2x.png");
+  }
+}
