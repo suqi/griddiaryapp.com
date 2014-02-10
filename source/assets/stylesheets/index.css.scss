@@ -192,9 +192,13 @@
         align-items: center;
         text-decoration: none;
         color: #6f6f6f;
+        &:hover {
+          color: #31c4cc;
+        }
 
         @mixin footer-links-icon($name) {
           @include background-image("icons/#{$name}", 81px, 81px);
+
         }
 
         .footer-links-facebook-icon {
