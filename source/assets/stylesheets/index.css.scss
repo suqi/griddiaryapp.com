@@ -1,4 +1,3 @@
-@import 'mixins/carousel';
 @import 'mixins/images';
 @import 'mixins/media-queries';
 
@@ -54,25 +53,10 @@
       min-height: 675px;
       @include background-image('iPhone', 375px, 675px);
 
-      .screenshots-container {
-        overflow: hidden;
-        position: relative;
-        height: 100%;
-        margin: 0 27px 0 34px;
-      }
-
       .screenshots {
-        animation: hscroll 30s infinite;
-        width: 2240px;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
-        align-items: flex-end;
-        height: 100%;
-
-        &:hover {
-          animation-play-state:paused;
-        }
+        padding-top: 107px;
+        margin: 0 27px 0 34px;
+        width: 320px;
 
         & > div {
           background-position: bottom;

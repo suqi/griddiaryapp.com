@@ -11,7 +11,11 @@ html
     meta name="author" content="Sumi Interactive"
     meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
 
+    = stylesheet_link_tag '//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.carousel.min.css'
     = stylesheet_link_tag "application", media: 'all'
+    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js'
+    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.carousel.min.js'
+    = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/jquery.colorbox-min.js'
 
   body[class="#{page_classes}-page"]
     = yield
