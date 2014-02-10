@@ -4,8 +4,10 @@
   .index-page {
 
     .index-hero {
-      flex-flow: column nowrap;
-      min-height: 1400px;
+      .index-hero-inner {
+        flex-flow: column nowrap;
+        min-height: 1400px;
+      }
 
       .index-hero-intro {
         flex: 1;

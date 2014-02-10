@@ -4,8 +4,10 @@
   .index-page {
 
     .index-hero {
-      max-width: 720px;
-      min-height: 600px;
+      .index-hero-inner {
+        max-width: 720px;
+        min-height: 600px;
+      }
 
       .index-hero-intro {
         flex: 1;

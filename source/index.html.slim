@@ -1,22 +1,23 @@
 .index-hero
-  .index-hero-intro
-    .index-hero-intro-logo
-    .index-hero-intro-slogan
-      p The <strong>simplest</strong> way to get started with keeping a diary.
-      p New version coming in <em>February</em>
-    .index-hero-intro-links
-      = link_to '', 'https://itunes.apple.com/us/app/grid-diary-simplest-way-to/id597077261?mt=8',
-        class: 'index-hero-intro-links-app_store'
+  .index-hero-inner
+    .index-hero-intro
+      .index-hero-intro-logo
+      .index-hero-intro-slogan
+        p The <strong>simplest</strong> way to get started with keeping a diary.
+        p New version coming in <em>February</em>
+      .index-hero-intro-links
+        = link_to '', 'https://itunes.apple.com/us/app/grid-diary-simplest-way-to/id597077261?mt=8',
+          class: 'index-hero-intro-links-app_store'
 
-  .index-hero-screenshot
-    .screenshots
-      .screenshot-1
-      .screenshot-2
-      .screenshot-3
-      .screenshot-4
-      .screenshot-5
-      .screenshot-6
-      .screenshot-7
+    .index-hero-screenshot
+      .screenshots
+        .screenshot-1
+        .screenshot-2
+        .screenshot-3
+        .screenshot-4
+        .screenshot-5
+        .screenshot-6
+        .screenshot-7
 .index-gallery
   - ['Loading', 'Grids', 'Weather_Mood', 'Calendar', 'Edit', 'Readmode', 'Landscape', 'Share_Export', 'Tea'].each do |name|
     = link_to image_path("gallery/#{name}@2x.jpg"), class: 'gallery' do

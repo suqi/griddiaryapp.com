@@ -4,16 +4,20 @@
 .index-page {
   display: flex;
   flex-flow: column nowrap;
-  background: image-url('top-bg.jpg') no-repeat;
-  background-position: center;
-  background-size: cover;
   justify-content: center;
 
   .index-hero {
-    align-self: center;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    background: image-url('top-bg.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .index-hero-inner {
+      margin: 0 auto;
+      align-self: center;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
 
     .index-hero-intro {
       display: flex;
