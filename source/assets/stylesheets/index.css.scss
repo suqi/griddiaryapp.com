@@ -45,7 +45,7 @@
         }
 
         .index-hero-intro-links-app_store {
-          @include background-image('icon-app_store', 252px, 72px);
+          @include background-image('icons/app_store', 252px, 72px);
         }
       }
 
@@ -118,22 +118,22 @@
       align-items: center;
 
       .index-features-feature-grid {
-        @include background-image('icon-grid', 60px, 60px);
+        @include background-image('icons/grid', 60px, 60px);
       }
       .index-features-feature-reading {
-        @include background-image('icon-reading', 60px, 60px);
+        @include background-image('icons/reading', 60px, 60px);
       }
       .index-features-feature-portrait_and_landscape {
-        @include background-image('icon-portrait_and_landscape', 60px, 60px);
+        @include background-image('icons/portrait_and_landscape', 60px, 60px);
       }
       .index-features-feature-library {
-        @include background-image('icon-library', 60px, 60px);
+        @include background-image('icons/library', 60px, 60px);
       }
       .index-features-feature-icloud {
-        @include background-image('icon-icloud', 60px, 60px);
+        @include background-image('icons/icloud', 60px, 60px);
       }
       .index-features-feature-passcode {
-        @include background-image('icon-passcode', 60px, 60px);
+        @include background-image('icons/passcode', 60px, 60px);
       }
 
       h2 {
@@ -186,26 +186,47 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    background-color: #d4d4d6;
+    border-top: 1px solid #d4d4d6;
+    background-color: white;
     text-align: center;
 
-    .footer-social {
+    .footer-links {
       display: flex;
       justify-content: center;
+      align-items: center;
 
       a {
-        margin: 0 10px;
+        margin: 0 20px;
+        font-size: 14px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #6f6f6f;
 
-        &.footer-social-facebook {
-          @include background-image('icon-facebook', 64px, 64px);
+        .footer-links-facebook-icon {
+          @include background-image('icons/facebook', 81px, 81px);
         }
-        &.footer-social-twitter {
-          @include background-image('icon-twitter', 64px, 64px);
+        .footer-links-twitter-icon {
+          @include background-image('icons/twitter', 81px, 81px);
+        }
+        .footer-links-presskit-icon {
+          @include background-image('icons/presskit', 81px, 81px);
+        }
+        .footer-links-support-icon {
+          @include background-image('icons/support', 81px, 81px);
+        }
+        .footer-links-translate-icon {
+          @include background-image('icons/translate', 81px, 81px);
+        }
+        .footer-links-contact-icon {
+          @include background-image('icons/contact', 81px, 81px);
         }
       }
     }
 
-    .footer-links {
+    .footer-copy {
       color: #6f6f6f;
 
       a {
