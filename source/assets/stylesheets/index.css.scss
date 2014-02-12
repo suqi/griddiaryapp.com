@@ -7,7 +7,7 @@
   justify-content: center;
 
   .index-hero {
-    background: image-url('top-bg.jpg') no-repeat;
+    background: image-url('top_bg.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 
@@ -30,8 +30,6 @@
       }
 
       .index-hero-intro-slogan {
-        padding: 70px 0;
-        font-size: 40px;
         color: white;
 
         p:nth-of-type(2) {

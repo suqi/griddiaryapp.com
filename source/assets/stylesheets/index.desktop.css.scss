@@ -10,6 +10,11 @@
 
       .index-hero-intro {
         flex: 1;
+
+        .index-hero-intro-slogan {
+          padding: 70px 0;
+          font-size: 40px;
+        }
         .index-hero-intro-links {
           flex-flow: row nowrap;
         }

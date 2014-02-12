@@ -1,12 +1,16 @@
 @import 'mixins/media-queries';
 
+$image_zoom: 0.8;
+
 @include screen(320px, 568px) {
   .index-page {
 
     .index-hero {
+      background: image-url('top_bg-iphone.jpg') no-repeat;
+
       .index-hero-inner {
         flex-flow: column nowrap;
-        min-height: 1400px;
+        min-height: 1000px;
       }
 
       .index-hero-intro {
@@ -14,22 +18,30 @@
         align-items: center;
 
         .index-hero-intro-logo {
-          zoom: 0.8;
+          zoom: $image_zoom;
         }
 
         .index-hero-intro-slogan {
           width: 260px;
+          font-size: 26px;
+          padding: 30px 0;
+
+          p:nth-of-type(2) {
+            font-size: 16px;
+          }
         }
 
         .index-hero-intro-links {
           flex-flow: column nowrap;
+          .index-hero-intro-links-app_store {
+          }
         }
       }
       .index-hero-screenshot {
         align-self: center;
 
         background-position: bottom;
-        zoom: 0.8;
+        zoom: $image_zoom;
       }
     }
 
