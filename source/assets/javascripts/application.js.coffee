@@ -1,3 +1,7 @@
+#= require vendor/jquery
+#= require vendor/jquery.colorbox
+#= require vendor/owl.carousel
+#
 #= require_directory .
 #= require_self
 
