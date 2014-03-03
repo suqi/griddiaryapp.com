@@ -65,26 +65,32 @@
         }
       }
 
-      .screenshot-1 {
-        @include background-image('screenshots/1', 320px, 568px);
+      .screenshot-calendar {
+        @include background-image('screenshots/calendar', 320px, 568px);
       }
-      .screenshot-2 {
-        @include background-image('screenshots/2', 320px, 568px);
+      .screenshot-diary-meta {
+        @include background-image('screenshots/diary-meta', 320px, 568px);
       }
-      .screenshot-3 {
-        @include background-image('screenshots/3', 320px, 568px);
+      .screenshot-edit-grids {
+        @include background-image('screenshots/edit-grids', 320px, 568px);
       }
-      .screenshot-4 {
-        @include background-image('screenshots/4', 320px, 568px);
+      .screenshot-edit-title {
+        @include background-image('screenshots/edit-title', 320px, 568px);
       }
-      .screenshot-5 {
-        @include background-image('screenshots/5', 320px, 568px);
+      .screenshot-main-screen {
+        @include background-image('screenshots/main-screen', 320px, 568px);
       }
-      .screenshot-6 {
-        @include background-image('screenshots/6', 320px, 568px);
+      .screenshot-reading-mode {
+        @include background-image('screenshots/reading-mode', 320px, 568px);
       }
-      .screenshot-7 {
-        @include background-image('screenshots/7', 320px, 568px);
+      .screenshot-share {
+        @include background-image('screenshots/share', 320px, 568px);
+      }
+      .screenshot-transition {
+        @include background-image('screenshots/transition', 320px, 568px);
+      }
+      .screenshot-write {
+        @include background-image('screenshots/write', 320px, 568px);
       }
     }
   }
