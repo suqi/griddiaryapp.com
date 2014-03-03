@@ -104,7 +104,6 @@
 
     .index-features-feature {
       flex: 1 30%;
-      height: 200px;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
@@ -135,7 +134,9 @@
       }
 
       p {
-        font-size: 14px;
+        max-width: 270px;
+        font-size: 18px;
+        word-wrap: break-word;
       }
     }
   }
