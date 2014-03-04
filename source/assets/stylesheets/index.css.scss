@@ -1,6 +1,8 @@
 @import 'mixins/images';
 @import 'mixins/media-queries';
 
+@import 'variables';
+
 .index-page {
   display: flex;
   flex-flow: column nowrap;
@@ -141,6 +143,7 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid $border-color;
 
     blockquote {
       display: flex;
@@ -161,11 +164,17 @@
         }
       }
 
-      small {
+      cite {
+        &:before {
+          content: '— ';
+        }
         font-family: 'Poly', serif;
-        font-size: 24px;
-        color: #4a4a4a;
         align-self: flex-end;
+
+        a {
+          color: $link-color;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -174,7 +183,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    border-top: 1px solid #d4d4d6;
+    border-top: 1px solid $border-color;
     background-color: white;
     text-align: center;
 
@@ -191,7 +200,7 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        color: #6f6f6f;
+        color: $text-color;
         &:hover {
           color: #31c4cc;
         }
@@ -223,10 +232,10 @@
     }
 
     .footer-copy {
-      color: #6f6f6f;
+      color: $text-color;
 
       a {
-        color: black;
+        color: $link-color;
       }
     }
   }
