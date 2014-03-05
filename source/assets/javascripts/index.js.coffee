@@ -16,3 +16,14 @@ $(".screenshots").owlCarousel
   pagination: false
   autoPlay: true
   stopOnHover: true
+
+$('.index-quotes').owlCarousel
+  items: 2
+  itemsDesktop: false
+  itemsDesktopSmall: false
+  itemsTablet: false
+  itemsTabletSmall: false
+  slideSpeed: 300
+  paginationSpeed: 400
+  pagination: true
+  autoPlay: true

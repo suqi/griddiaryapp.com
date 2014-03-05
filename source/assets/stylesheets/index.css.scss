@@ -139,10 +139,6 @@
   }
 
   .index-quotes {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
     border-top: 1px solid $border-color;
 
     blockquote {
@@ -152,7 +148,7 @@
 
       p {
         font-family: 'Poly', serif;
-        font-size: 20px;
+        font-size: 28px;
         color: #636363;
 
         &:before {
