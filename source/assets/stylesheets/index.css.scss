@@ -134,6 +134,8 @@
         max-width: 270px;
         font-size: 18px;
         word-wrap: break-word;
+        word-break: break-all;
+        hyphens: auto;
       }
     }
   }
