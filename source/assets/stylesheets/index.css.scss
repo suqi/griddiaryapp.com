@@ -7,13 +7,31 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  background-image: image-url('bg.jpg') no-repeat;
+  background-position: fixed;
 
-  .index-hero {
-    background: image-url('top_bg.jpg') no-repeat;
+  header {
+    height: 120px;
+    display: flex;
+    flex-flow: row nowrap;
+
+    .brand {
+      @include background-image('brand', 227px, 80px);
+    }
+
+    nav {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+  }
+
+  .hero {
+    height: 764px;
     background-position: center;
     background-size: cover;
 
-    .index-hero-inner {
+    .hero-inner {
       margin: 0 auto;
       align-self: center;
       display: flex;
@@ -21,106 +39,64 @@
       justify-content: space-between;
     }
 
-    .index-hero-intro {
+    .hero-intro {
       display: flex;
       flex-flow: column nowrap;
       align-items: flex-start;
       justify-content: center;
 
-      .index-hero-intro-logo {
+      .hero-intro-logo {
         @include background-image('icon', 339px, 114px);
       }
 
-      .index-hero-intro-slogan {
+      .hero-intro-slogan {
         color: white;
       }
 
-      .index-hero-intro-links {
+      .hero-intro-links {
         display: flex;
 
         a {
           display: inline-block;
         }
 
-        .index-hero-intro-links-app_store {
+        .hero-intro-links-app_store {
           @include background-image('icons/app_store', 252px, 72px);
         }
       }
 
     }
-    .index-hero-screenshot {
-      min-height: 675px;
-      @include background-image('iPhone', 375px, 675px);
-
-      .screenshots {
-        padding-top: 107px;
-        margin: 0 27px 0 34px;
-        width: 320px;
-
-        & > div {
-          background-position: bottom;
-        }
-      }
-
-      .screenshot-calendar {
-        @include background-image('screenshots/calendar', 320px, 568px);
-      }
-      .screenshot-diary-meta {
-        @include background-image('screenshots/diary-meta', 320px, 568px);
-      }
-      .screenshot-edit-grids {
-        @include background-image('screenshots/edit-grids', 320px, 568px);
-      }
-      .screenshot-edit-title {
-        @include background-image('screenshots/edit-title', 320px, 568px);
-      }
-      .screenshot-main-screen {
-        @include background-image('screenshots/main-screen', 320px, 568px);
-      }
-      .screenshot-reading-mode {
-        @include background-image('screenshots/reading-mode', 320px, 568px);
-      }
-      .screenshot-share {
-        @include background-image('screenshots/share', 320px, 568px);
-      }
-      .screenshot-transition {
-        @include background-image('screenshots/transition', 320px, 568px);
-      }
-      .screenshot-write {
-        @include background-image('screenshots/write', 320px, 568px);
-      }
-    }
   }
 
-  .index-features {
+  .features {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     color: #5b6d7c;
 
-    .index-features-feature {
+    .features-feature {
       flex: 1 30%;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
 
-      .index-features-feature-grid {
+      .features-feature-grid {
         @include background-image('icons/grid', 60px, 60px);
       }
-      .index-features-feature-reading {
+      .features-feature-reading {
         @include background-image('icons/reading', 60px, 60px);
       }
-      .index-features-feature-portrait_and_landscape {
+      .features-feature-portrait_and_landscape {
         @include background-image('icons/portrait_and_landscape', 60px, 60px);
       }
-      .index-features-feature-library {
+      .features-feature-library {
         @include background-image('icons/library', 60px, 60px);
       }
-      .index-features-feature-icloud {
+      .features-feature-icloud {
         @include background-image('icons/icloud', 60px, 60px);
       }
-      .index-features-feature-passcode {
+      .features-feature-passcode {
         @include background-image('icons/passcode', 60px, 60px);
       }
 
@@ -139,7 +115,7 @@
     }
   }
 
-  .index-quotes {
+  .press {
     border-top: 1px solid $border-color;
 
     blockquote {
@@ -176,7 +152,7 @@
     }
   }
 
-  .index-footer {
+  .footer {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -237,14 +213,57 @@
     }
   }
 
-  .index-gallery {
+  .gallery {
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
     background: #f8f9fb;
 
     a {
       img {
         width: 100%;
+      }
+    }
+  }
+
+  .subscribe {
+    padding: 50px 0 50px 0;
+
+    h2 {
+      text-align: center;
+      font-size: 42px;
+    }
+
+    form {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+
+      input {
+        height: 42px;
+        width: 342px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: 1px solid #5A5A5A;
+        text-align: center;
+      }
+
+      button[type='submit'] {
+        color: white;
+        background: #31c4cc;
+        border: none;
+        border-radius: 8px;
+        line-height: 42px;
+        font-size: 21px;
+        width: 180px;
+        margin-left: 23px;
+
+        &:hover {
+          cursor: pointer;
+          color: #5A5A5A;
+        }
       }
     }
   }
