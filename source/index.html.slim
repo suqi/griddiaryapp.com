@@ -1,8 +1,8 @@
 header
   .brand
   nav
-    = link_to 'Gallery', '#gallery'
-    = link_to 'Features', '#features'
+    = link_to 'Gallery', '#gallery', data: { behavior: 'smooth-scroll' }
+    = link_to 'Features', '#features', data: { behavior: 'smooth-scroll' }
     = link_to 'Support', 'https://griddiary.uservoice.com'
     = link_to 'Press Kit', 'http://griddiary.qiniudn.com/presskit.zip'
 
@@ -19,7 +19,7 @@ header
 
 .gallery#gallery
   - ['Loading', 'Grids', 'Weather_Mood', 'Calendar', 'Edit', 'Readmode', 'Landscape', 'Share_Export', 'Tea'].each do |name|
-    = link_to image_path("gallery/#{name}@2x.jpg"), class: 'gallery' do
+    = link_to image_path("gallery/#{name}@2x.jpg") do
       = image_tag "gallery/#{name}-thumb.jpg", title: name
 
 .features#features

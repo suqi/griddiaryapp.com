@@ -18,3 +18,11 @@ $('.press').owlCarousel
   paginationSpeed: 400
   pagination: true
   autoPlay: true
+
+$(document).on 'click', '[data-behavior~=smooth-scroll]', (event)->
+
+  $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top
+  }, 1000)
+
+  event.preventDefault()
