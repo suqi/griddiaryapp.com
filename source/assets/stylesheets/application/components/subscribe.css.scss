@@ -38,10 +38,10 @@
       height: 48px;
       width: 80vw;
       min-width: 300px;
-      max-width: 411px;
+      max-width: 315px;
       font-size: 18px;
       border-radius: 8px;
-      border: 1px solid #5A5A5A;
+      border: 2px solid #5A5A5A;
       padding: 0 0 0 10px;
 
       @include min-screen(768px) {
@@ -54,7 +54,7 @@
       background: #31c4cc;
       border: none;
       border-radius: 8px;
-      line-height: 42px;
+      line-height: 48px;
       font-size: 21px;
       min-width: 180px;
 
@@ -68,7 +68,7 @@
 
       &:hover {
         cursor: pointer;
-        color: #5A5A5A;
+        background-color: darken(#31c4cc, 10%);
       }
     }
   }

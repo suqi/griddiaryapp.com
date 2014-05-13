@@ -9,6 +9,7 @@
   flex-flow: column nowrap;
   justify-content: center;
   background: image-url('bg.jpg') no-repeat;
+  background-size: cover;
 
   @include min-screen(768px) {
     background-attachment: fixed;
