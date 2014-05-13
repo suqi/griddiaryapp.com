@@ -12,6 +12,7 @@
   justify-content: center;
   background-color: white;
   text-align: center;
+  padding: 0 0 10px 0;
 
   .footer-links {
     display: flex;
@@ -59,10 +60,13 @@
   }
 
   .footer-copy {
-    color: $text-color;
+    p {
+      font-size: 15px;
+      color: $text-color;
 
-    a {
-      color: $link-color;
+      a {
+        color: $link-color;
+      }
     }
   }
 }
