@@ -1,0 +1,56 @@
+@import 'mixins/images';
+@import 'mixins/media-queries';
+@import 'variables';
+
+.hero {
+  @include background-image('hero', 1500px, 710px);
+  height: 1164px;
+  width: auto;
+  background-position-x: -450px;
+  position: relative;
+
+  @include min-screen(768px) {
+    height: 764px;
+    background-position-x: center;
+  }
+
+  .content {
+    margin: 800px auto 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 80vw;
+    max-width: 400px;
+
+    @include min-screen(768px) {
+      margin: 129px 0 0 55vw;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: $white;
+      line-height: 33px;
+      margin: 0;
+    }
+
+    .download {
+      margin: 66px 0 0 0;
+      @include background-image('button-download', 205px, 61px);
+      display: block;
+      align-self: center;
+    }
+  }
+
+  .tip {
+    margin: 50px auto 0 auto;
+    text-align: center;
+    font-size: 15px;
+    color: #99CBD0;
+    line-height: 18px;
+
+    @include min-screen(768px) {
+      position: absolute;
+      bottom: 33px;
+      left: 30vw;
+    }
+  }
+}

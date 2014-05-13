@@ -1,0 +1,33 @@
+@import 'mixins/images';
+@import 'mixins/media-queries';
+@import 'variables';
+
+.gallery {
+  display: flex;
+  padding: 30px 10vw;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background: #f8f9fb;
+
+  @include min-screen(768px) {
+    flex-flow: row wrap;
+    padding: 30px 0;
+  }
+
+  a {
+    flex: 0 0 60vw;
+
+    @include min-screen(768px) {
+      flex: 0 0 30vw;
+    }
+
+    @include min-screen(1200px) {
+      flex: 0 0 120px;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}

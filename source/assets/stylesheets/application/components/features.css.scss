@@ -1,0 +1,64 @@
+@import 'mixins/images';
+@import 'mixins/media-queries';
+@import 'variables';
+
+.features {
+  padding: 100px 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: #5b6d7c;
+  background: $white;
+  text-align: center;
+
+  @include min-screen(768px) {
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+
+  .feature {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0;
+
+    @include min-screen(768px) {
+      flex: 0 0 31%;
+    }
+  }
+
+  .grid {
+    @include background-image('icons/grid', 60px, 60px);
+  }
+  .reading {
+    @include background-image('icons/reading', 60px, 60px);
+  }
+  .portrait_and_landscape {
+    @include background-image('icons/portrait_and_landscape', 60px, 60px);
+  }
+  .library {
+    @include background-image('icons/library', 60px, 60px);
+  }
+  .icloud {
+    @include background-image('icons/icloud', 60px, 60px);
+  }
+  .passcode {
+    @include background-image('icons/passcode', 60px, 60px);
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  p {
+    max-width: 270px;
+    font-size: 18px;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+}
+

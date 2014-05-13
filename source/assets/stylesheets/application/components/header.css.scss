@@ -1,0 +1,50 @@
+@import 'mixins/images';
+@import 'mixins/media-queries';
+@import 'variables';
+
+header {
+  min-height: 120px;
+  padding: 10px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: $white;
+  align-items: center;
+  justify-content: center;
+
+  @include min-screen(768px) {
+    flex-flow: row nowrap;
+    padding: 0 15vw;
+  }
+
+  .brand {
+    @include background-image('brand', 227px, 80px);
+    background-position: right;
+
+    @include min-screen(768px) {
+      margin: 0 0 0 10vw;
+      flex: 1 0 300px;
+    }
+  }
+
+  nav {
+    display: none;
+    width: 90vw;
+    margin: 10vw 0;
+    flex-flow: row nowrap;
+    align-items: center;
+    line-height: 21px;
+    justify-content: space-between;
+
+    @include min-screen(768px) {
+      display: flex;
+      margin: 0 10vw;
+      flex: 2 0 300px;
+    }
+
+    a {
+      font-size: 18px;
+      color: #4A4A4A;
+      text-decoration: none;
+    }
+  }
+}
