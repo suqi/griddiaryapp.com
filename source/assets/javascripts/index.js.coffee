@@ -1,24 +1,14 @@
 if window.matchMedia("(min-width: 768px)").matches
-  $("a.gallery").colorbox(
+  $(".gallery a").colorbox(
     {
-      rel:"gallery",
       scalePhotos: true,
       maxWidth: '90%',
       maxHeight: '90%'
     }
   )
 
-$(".screenshots").owlCarousel
-  navigation: false
-  slideSpeed: 300
-  paginationSpeed: 400
-  singleItem: true
-  pagination: false
-  autoPlay: true
-  stopOnHover: true
-
-$('.index-quotes').owlCarousel
-  items: 2
+$('.press').owlCarousel
+  items: 1
   itemsDesktop: false
   itemsDesktopSmall: false
   itemsTablet: false
@@ -27,3 +17,23 @@ $('.index-quotes').owlCarousel
   paginationSpeed: 400
   pagination: true
   autoPlay: true
+
+$(document).on 'click', '[data-behavior~=smooth-scroll]', (event)->
+
+  $('html, body').animate({
+    scrollTop: $($(this).attr('href')).offset().top
+  }, 1000)
+
+  event.preventDefault()
+
+$(document).on 'click', '[data-behavior~=play-video]', (event)->
+  videoIframe = '<iframe src="https://player.vimeo.com/video/94643830?autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+
+  $('.video .preview')
+    .css('background', '#fff')
+    .html(videoIframe)
+  $('.video .preview').fitVids()
+
+  $(this).hide()
+
+  event.preventDefault()

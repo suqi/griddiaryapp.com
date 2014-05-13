@@ -1,0 +1,50 @@
+@import 'mixins/images';
+@import 'mixins/media-queries';
+@import 'variables';
+
+.press {
+  padding: 100px 0 20px 0;
+  background: image-url('bg.jpg') no-repeat;
+
+  @include min-screen(768px) {
+    background: transparent;
+  }
+
+  blockquote {
+    margin: 0 auto;
+    padding: 0 10vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    max-width: 700px;
+
+    p {
+      font-family: 'Poly', serif;
+      font-size: 28px;
+      color: $white;
+
+      &:before {
+        content: "“";
+      }
+
+      &:after {
+        content: "”";
+      }
+    }
+
+    cite {
+      &:before {
+        content: '— ';
+      }
+      font-family: 'Poly', serif;
+      align-self: flex-end;
+      color: $white;
+
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+

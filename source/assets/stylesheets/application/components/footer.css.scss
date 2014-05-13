@@ -1,0 +1,73 @@
+@import 'mixins/images';
+@import 'mixins/media-queries';
+@import 'variables';
+
+@mixin footer-links-icon($name) {
+  @include background-image("icons/#{$name}", 81px, 81px);
+}
+
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+  padding: 0 0 10px 0;
+
+  .footer-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    @include min-screen(768px) {
+      flex-flow: row nowrap;
+    }
+
+    a {
+      margin: 0 20px;
+      font-size: 14px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: $text-color;
+      &:hover {
+        color: #31c4cc;
+      }
+
+
+      .footer-links-facebook-icon {
+        @include footer-links-icon('facebook');
+      }
+      .footer-links-twitter-icon {
+        @include footer-links-icon('twitter');
+      }
+      .footer-links-presskit-icon {
+        @include footer-links-icon('presskit');
+      }
+      .footer-links-support-icon {
+        @include footer-links-icon('support');
+      }
+      .footer-links-translate-icon {
+        @include footer-links-icon('translate');
+      }
+      .footer-links-contact-icon {
+        @include footer-links-icon('contact');
+      }
+    }
+  }
+
+  .footer-copy {
+    p {
+      font-size: 15px;
+      color: $text-color;
+
+      a {
+        color: $link-color;
+      }
+    }
+  }
+}
+

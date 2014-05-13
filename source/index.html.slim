@@ -1,56 +1,56 @@
-.index-hero
-  .index-hero-inner
-    .index-hero-intro
-      .index-hero-intro-logo
-      .index-hero-intro-slogan
-        p The <strong>simplest</strong> way to get started with keeping a diary.
-      .index-hero-intro-links
-        = link_to '', 'https://itunes.apple.com/us/app/grid-diary-simplest-way-to/id597077261?mt=8',
-          class: 'index-hero-intro-links-app_store'
+header
+  .brand
+  nav
+    = link_to 'Gallery', '#gallery', data: { behavior: 'smooth-scroll' }
+    = link_to 'Features', '#features', data: { behavior: 'smooth-scroll' }
+    = link_to 'Support', 'https://griddiary.uservoice.com'
+    = link_to 'Press Kit', 'http://griddiary.qiniudn.com/presskit.zip'
 
-    .index-hero-screenshot
-      .screenshots
-        .screenshot-calendar
-        .screenshot-diary-meta
-        .screenshot-edit-grids
-        .screenshot-edit-title
-        .screenshot-main-screen
-        .screenshot-reading-mode
-        .screenshot-share
-        .screenshot-transition
-        .screenshot-write
-.index-gallery
+.hero
+  .content
+    h1 The <strong>simplest</strong> way to get started with keeping a diary.
+    = link_to '', 'https://itunes.apple.com/app/id597077261',
+      class: 'download'
+  .tip
+    em * Grid Diary for iPad is coming in June 2014.
+
+.video#gallery
+  .preview
+  button[data-behavior='play-video'] Watch “Diary Reimagined”
+
+.gallery
   - ['Loading', 'Grids', 'Weather_Mood', 'Calendar', 'Edit', 'Readmode', 'Landscape', 'Share_Export', 'Tea'].each do |name|
-    = link_to image_path("gallery/#{name}@2x.jpg"), class: 'gallery' do
+    = link_to image_path("gallery/#{name}@2x.jpg") do
       = image_tag "gallery/#{name}-thumb.jpg", title: name
 
-.index-features
-  .index-features-feature
-    .index-features-feature-grid
-    h2 Unique Grid Format
-    p Using “Grid” to guide you to jot down your memories for a day.
-  .index-features-feature
-    .index-features-feature-library
-    h2 Prompt library
-    p Find your writing inspirations.
-  .index-features-feature
-    .index-features-feature-reading
-    h2 Reading mode
-    p Makes reading your diaries a delight.
-  .index-features-feature
-    .index-features-feature-icloud
-    h2 iCloud Sync
-    p Access your diaries on all of your devices.
-  .index-features-feature
-    .index-features-feature-passcode
-    h2 Write Privately
-    p Grid Diary is a completely private place for you to write.
-  .index-features-feature
-    .index-features-feature-portrait_and_landscape
-    h2 Beautifully Designed
-    p Every pixel is beautifully crafted for iOS 7, in both portrait and landscape.
+.features#features
+  .inner
+    .feature
+      .grid
+      h2 Unique Grid Format
+      p Using “Grid” to guide you to jot down your memories for a day.
+    .feature
+      .library
+      h2 Prompt library
+      p Find your writing inspirations.
+    .feature
+      .reading
+      h2 Reading mode
+      p Makes reading your diaries a delight.
+    .feature
+      .icloud
+      h2 iCloud Sync
+      p Access your diaries on all of your devices.
+    .feature
+      .passcode
+      h2 Write Privately
+      p Grid Diary is a completely private place for you to write.
+    .feature
+      .portrait_and_landscape
+      h2 Beautifully Designed
+      p Every pixel is beautifully crafted for iOS 7, in both portrait and landscape.
 
-.index-quotes
+.press
   blockquote
     p Grid Diary makes keeping a journal as easy as filling out a form.
     cite = link_to 'App Invasion', 'http://www.techhive.com/article/2055508/grid-diary-makes-keeping-a-journal-as-easy-as-filling-out-a-form.html'
@@ -69,5 +69,8 @@
     p Grid Diary is a valuable resource to help you keep track of your days on your iPhone.
     cite = link_to 'Apple’N’Apps', 'http://applenapps.com/review/grid-diary-giving-you-daily-incentive-to-write#.UxV80vSSy-U'
 
-.index-footer
+.subscribe
+  = partial 'subscribe_form'
+
+.footer
   = partial 'footer'

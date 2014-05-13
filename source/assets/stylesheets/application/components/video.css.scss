@@ -1,0 +1,42 @@
+@import 'mixins/images';
+@import 'mixins/media-queries';
+@import 'variables';
+
+.video {
+  padding: 50px 0 100px 0;
+  background: $white;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  .preview {
+    margin-top: 77px;
+    @include background-image('preview', 804px, 473px, 'jpg');
+    background-position: center;
+    max-width: 95vw;
+  }
+
+  button {
+    margin: 33px 0 0 0;
+    padding: 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: #4A4A4A;
+    line-height: 37px;
+    border: none;
+    background: transparent;
+
+    &:hover {
+      color: #31c4cc;
+    }
+
+    &:before {
+      @include background-image('icons/play', 37px, 36px);
+      content: '';
+      display: block;
+      float: left;
+      margin-right: 10px;
+    }
+  }
+}
+
