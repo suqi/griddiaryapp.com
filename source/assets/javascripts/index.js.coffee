@@ -34,6 +34,6 @@ $(document).on 'click', '[data-behavior~=play-video]', (event)->
     .html(videoIframe)
   $('.video .preview').fitVids()
 
-  $(this).hide()
+  $('.video button').hide()
 
   event.preventDefault()
