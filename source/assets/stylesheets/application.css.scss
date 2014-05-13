@@ -1,6 +1,9 @@
 /*
  *= require_self
- *= require_tree ./vendor
+ *= require ./vendor/normalize
+ *= require ./vendor/owl.carousel
+ *= require ./vendor/owl.theme.css
+ *= require ./vendor/colorbox
  *
  *= require_tree ./application
  */
