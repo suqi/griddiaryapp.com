@@ -14,6 +14,7 @@
     @include background-image('preview', 804px, 473px, 'jpg');
     background-position: center;
     max-width: 95vw;
+    cursor: pointer;
   }
 
   button {
