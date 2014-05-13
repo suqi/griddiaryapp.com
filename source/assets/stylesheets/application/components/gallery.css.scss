@@ -8,7 +8,7 @@
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-  background: #f8f9fb;
+  background: $white;
 
   @include min-screen(768px) {
     flex-flow: row wrap;
