@@ -25,3 +25,11 @@ $(document).on 'click', '[data-behavior~=smooth-scroll]', (event)->
   }, 1000)
 
   event.preventDefault()
+
+$(document).on 'click', '[data-behavior~=play-video]', (event)->
+  videoIframe = '<iframe src="https://player.vimeo.com/video/94643830?autoplay=1" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+
+  $('.video .preview').html(videoIframe)
+  $(this).hide()
+
+  event.preventDefault()
