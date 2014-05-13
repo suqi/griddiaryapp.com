@@ -3,7 +3,7 @@
 @import 'variables';
 
 .video {
-  height: 764px;
+  padding: 50px 0 100px 0;
   background: $white;
   display: flex;
   flex-flow: column nowrap;
@@ -25,6 +25,10 @@
     line-height: 37px;
     border: none;
     background: transparent;
+
+    &:hover {
+      color: #31c4cc;
+    }
 
     &:before {
       @include background-image('icons/play', 37px, 36px);
