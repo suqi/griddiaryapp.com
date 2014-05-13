@@ -27,7 +27,7 @@ header {
   }
 
   nav {
-    display: none;
+    display: flex;
     width: 90vw;
     margin: 10vw 0;
     flex-flow: row nowrap;
@@ -36,7 +36,6 @@ header {
     justify-content: space-between;
 
     @include min-screen(768px) {
-      display: flex;
       margin: 0 10vw;
       flex: 2 0 300px;
     }
