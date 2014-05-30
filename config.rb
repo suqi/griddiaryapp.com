@@ -1,6 +1,7 @@
 require 'slim'
 
 page "/support/*", layout: "support"
+page "/sitemap.xml", layout: false
 
 activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 
