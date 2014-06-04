@@ -25,7 +25,7 @@ header {
 
   nav {
     display: flex;
-    width: 90vw;
+    width: 95vw;
     flex-flow: row nowrap;
     align-items: center;
     line-height: 21px;
@@ -41,9 +41,13 @@ header {
     }
 
     a {
-      font-size: 18px;
+      font-size: 14px;
       color: #4A4A4A;
       text-decoration: none;
+
+      @include min-screen(768px) {
+        font-size: 18px;
+      }
 
       &:hover {
         color: #31c4cc;

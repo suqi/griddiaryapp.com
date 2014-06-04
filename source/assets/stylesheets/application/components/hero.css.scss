@@ -3,33 +3,39 @@
 @import 'variables';
 
 .hero {
-  @include background-image('hero', 1500px, 710px);
-  height: 1164px;
+  @include background-image('hero', 1500px, 608px);
+  height: 964px;
   width: auto;
-  background-position-x: -450px;
+  background-position-y: bottom;
+  background-position-x: -920px;
   position: relative;
 
   @include min-screen(768px) {
-    height: 764px;
     background-position-x: center;
   }
 
   .content {
-    margin: 800px auto 0 auto;
+    margin: 40px auto 0 auto;
     display: flex;
     flex-flow: column nowrap;
     width: 80vw;
-    max-width: 400px;
+    text-align: center;
 
     @include min-screen(768px) {
-      margin: 129px 0 0 55vw;
+      margin: 100px auto 0 auto;
+      max-width: 800px;
     }
 
     h1 {
       font-size: 28px;
       color: $white;
-      line-height: 33px;
+      line-height: 1.25;
       margin: 0;
+
+      @include min-screen(768px) {
+        font-size: 34px;
+        line-height: 1;
+      }
     }
 
     .download {
@@ -37,21 +43,6 @@
       @include background-image('button-download', 205px, 61px);
       display: block;
       align-self: center;
-    }
-  }
-
-  .tip {
-    font-family: 'Poly', serif;
-    margin: 50px auto 0 auto;
-    text-align: center;
-    font-size: 15px;
-    color: #99CBD0;
-    line-height: 18px;
-
-    @include min-screen(768px) {
-      position: absolute;
-      bottom: 33px;
-      left: 30vw;
     }
   }
 }
