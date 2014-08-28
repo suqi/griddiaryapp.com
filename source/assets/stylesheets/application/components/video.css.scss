@@ -8,13 +8,31 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
+
+  @include min-screen(768px) {
+    flex-flow: row nowrap;
+  }
+
+  .video-item {
+    margin: 0 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 
   .preview {
     margin-top: 77px;
-    @include background-image('preview', 804px, 473px, 'jpg');
     background-position: center;
     max-width: 95vw;
     cursor: pointer;
+
+    &#video-preview-1 {
+      @include background-image('videos/1', 400px, 235px, 'jpg');
+    }
+    &#video-preview-2 {
+      @include background-image('videos/2', 400px, 235px, 'jpg');
+    }
   }
 
   button {

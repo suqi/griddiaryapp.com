@@ -9,6 +9,7 @@
   justify-content: space-around;
   align-items: center;
   background: $white;
+  border-bottom: 1px solid #ECFAFB;
 
   @include min-screen(768px) {
     flex-flow: row wrap;

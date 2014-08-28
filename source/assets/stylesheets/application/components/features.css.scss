@@ -6,63 +6,85 @@
   padding: 100px 0;
   background: $white;
 
-  .inner {
+  table {
     margin: 0 auto;
-    max-width: 1000px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    color: #5b6d7c;
-    text-align: center;
+    width: 90%;
 
     @include min-screen(768px) {
-      flex-flow: row wrap;
-      align-items: flex-start;
+      max-width: 700px;
     }
 
-    .feature {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 20px 0;
-
-      @include min-screen(768px) {
-        flex: 0 0 31%;
+    thead {
+      tr {
+        th {
+          font-size: 18px;
+          text-align: left;
+        }
       }
     }
 
-    .grid {
-      @include background-image('icons/grid', 60px, 60px);
-    }
-    .reading {
-      @include background-image('icons/reading', 60px, 60px);
-    }
-    .portrait_and_landscape {
-      @include background-image('icons/portrait_and_landscape', 60px, 60px);
-    }
-    .library {
-      @include background-image('icons/library', 60px, 60px);
-    }
-    .icloud {
-      @include background-image('icons/icloud', 60px, 60px);
-    }
-    .passcode {
-      @include background-image('icons/passcode', 60px, 60px);
-    }
+    tbody {
+      tr {
+        line-height: 40px;
+        border-bottom: 1px solid #ECFAFB;
 
-    h2 {
-      font-weight: bold;
-      font-size: 24px;
-      text-align: center;
+        td {
+          width: 50px;
+
+          &:nth-of-type(1) {
+            color: #2E9384;
+            font-size: 16px;
+            width: 200px;
+          }
+
+          &.yes {
+            @include background-image('icons/yes', 24px, 24px);
+            background-position: center left;
+          }
+          &.yes-note1 {
+            @include background-image('icons/yes-note1', 32px, 29px);
+            background-position: center left;
+          }
+          &.yes-note2 {
+            @include background-image('icons/yes-note2', 32px, 29px);
+            background-position: center left;
+          }
+        }
+      }
+    }
+  }
+
+  .notes {
+    margin: 0 auto;
+    padding-top: 99px;
+    width: 90%;
+
+    @include min-screen(768px) {
+      width: 50%;
+      max-width: 600px;
     }
 
     p {
-      max-width: 270px;
-      font-size: 18px;
-      word-wrap: break-word;
-      hyphens: auto;
+      font-size: 13px;
+
+      &:nth-of-type(1) {
+        &:before {
+          display: block;
+          padding-left: 10px;
+          float: left;
+          content: ' ';
+          @include background-image('icons/note-1', 14px, 14px);
+        }
+      }
+      &:nth-of-type(2) {
+        &:before {
+          display: block;
+          padding-left: 10px;
+          float: left;
+          content: ' ';
+          @include background-image('icons/note-2', 14px, 14px);
+        }
+      }
     }
   }
 }
