@@ -26,14 +26,17 @@ $(document).on 'click', '[data-behavior~=smooth-scroll]', (event)->
 
   event.preventDefault()
 
-$(document).on 'click', '[data-behavior~=play-video]', (event)->
-  videoIframe = '<iframe src="https://player.vimeo.com/video/94643830?autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+$ ->
+  $('[data-behavior~=play-video]').one 'click', (event)->
+    $this = $(this)
+    videoUrl = $this.data('video-url')
+    videoIframe = "<iframe src='#{videoUrl}' width='500' height='281' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
 
-  $('.video .preview')
-    .css('background', '#fff')
-    .html(videoIframe)
-  $('.video .preview').fitVids()
+    $this.find('.preview')
+      .css('background', '#fff')
+      .html(videoIframe)
+    $this.find('.preview').fitVids()
 
-  $('.video button').hide()
+    $this.find('button').hide()
 
-  event.preventDefault()
+    event.preventDefault()

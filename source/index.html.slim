@@ -13,9 +13,13 @@ header
     = link_to '', 'https://itunes.apple.com/app/id597077261',
       class: 'download'
 
-.video#gallery
-  .preview[data-behavior='play-video']
-  button[data-behavior='play-video'] Watch “Diary Reimagined”
+.video
+  .video-item[data-behavior='play-video' data-video-url="https://player.vimeo.com/video/94643830?autoplay=1"]
+    .preview
+    button Watch “Diary Reimagined”
+  .video-item[data-behavior='play-video' data-video-url="https://player.vimeo.com/video/94643830?autoplay=1"]
+    .preview
+    button Watch “Diary Reimagined”
 
 .gallery
   - ['Loading', 'Grids', 'Weather_Mood', 'Calendar', 'Edit', 'Readmode', 'Landscape', 'Share_Export', 'Tea'].each do |name|
