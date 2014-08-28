@@ -23,10 +23,16 @@
 
   .preview {
     margin-top: 77px;
-    @include background-image('preview', 400px, 235px, 'png');
     background-position: center;
     max-width: 95vw;
     cursor: pointer;
+
+    &#video-preview-1 {
+      @include background-image('videos/1', 400px, 235px, 'jpg');
+    }
+    &#video-preview-2 {
+      @include background-image('videos/2', 400px, 235px, 'jpg');
+    }
   }
 
   button {
