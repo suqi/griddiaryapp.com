@@ -56,10 +56,12 @@
 
   .notes {
     margin: 0 auto;
+    padding-top: 99px;
     width: 90%;
 
     @include min-screen(768px) {
       width: 50%;
+      max-width: 600px;
     }
 
     p {
