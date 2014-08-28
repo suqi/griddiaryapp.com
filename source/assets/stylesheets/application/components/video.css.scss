@@ -3,11 +3,11 @@
 @import 'variables';
 
 .video {
+  margin-top: 77px;
   padding: 50px 0 100px 0;
   background: $white;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
   justify-content: center;
 
   @include min-screen(768px) {
@@ -15,14 +15,14 @@
   }
 
   .video-item {
-    margin: 0 40px;
+    margin: 20px 40px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .preview {
-    margin-top: 77px;
     background-position: center;
     max-width: 95vw;
     cursor: pointer;
