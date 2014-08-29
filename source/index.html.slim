@@ -13,7 +13,7 @@ header
     = link_to '', 'https://itunes.apple.com/app/id597077261',
       class: 'download'
 
-.video
+.video#gallery
   .video-item[data-behavior='play-video' data-video-url="https://player.vimeo.com/video/104160696?autoplay=1"]
     .preview#video-preview-2
     button Watch “Gird Diary with Photo”
@@ -26,7 +26,7 @@ header
     = link_to image_path("gallery/#{name}@2x.jpg") do
       = image_tag "gallery/#{name}-thumb.jpg", title: name
 
-.features
+.features#features
   table
     thead
       tr
