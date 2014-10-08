@@ -6,12 +6,11 @@
   @include background-image('hero', 1500px, 608px);
   height: 964px;
   width: auto;
-  background-position-y: bottom;
-  background-position-x: -920px;
+  background-position: -920px bottom;
   position: relative;
 
   @include min-screen(768px) {
-    background-position-x: center;
+    background-position: center bottom;
   }
 
   .content {
