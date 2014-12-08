@@ -131,6 +131,9 @@ section.credits {
     &.avatar-qiuzao {
       @include avatar-image('qiuzao');
     }
+    &.avatar-ps {
+      @include avatar-image('ps');
+    }
   }
 
   .info {
