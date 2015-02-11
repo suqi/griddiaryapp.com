@@ -7,7 +7,7 @@ gem "middleman", "~>3.3.4"
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.3.4"
 
-gem 'slim'
+gem 'middleman-slim'
 gem "middleman-deploy"
 gem "middleman-autoprefixer"
 gem "middleman-imageoptim", "~> 0.1.4"

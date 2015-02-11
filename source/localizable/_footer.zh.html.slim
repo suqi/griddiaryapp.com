@@ -1,0 +1,31 @@
+.footer-links
+  = link_to 'https://www.facebook.com/griddiary' do
+    /FIXME: icon
+    .footer-links-facebook-icon
+    p 新浪微博
+  = link_to 'https://www.twitter.com/griddiary' do
+    /FIXME: icon
+    .footer-links-twitter-icon
+    p 微信
+  = link_to 'http://translate.griddiaryapp.com/project/griddiary/invite' do
+    .footer-links-translate-icon
+    p 翻译
+  = link_to 'http://griddiary.qiniudn.com/presskit.zip' do
+    .footer-links-presskit-icon
+    p 媒体资源
+  = link_to 'https://griddiary.uservoice.com' do
+    .footer-links-support-icon
+    p 支持
+  = link_to 'mailto:support@griddiaryapp.com' do
+    .footer-links-contact-icon
+    p 联系我们
+
+.footer-copy
+  p
+    | 版权所有 © 2015 #{link_to '厦门酥米网络科技有限公司', "http://sumiapp.com"}.
+    '
+    | All rights reserved.
+  p
+    = link_to '隐私政策', '/support/privacy.html'
+    | &nbsp;|&nbsp;
+    = link_to '服务条款', '/support/terms.html'

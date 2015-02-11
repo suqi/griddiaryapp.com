@@ -1,0 +1,38 @@
+---
+zh:
+  nav:
+    gallery: 图片库
+    features: 功能列表
+    support: 支持
+    blog: 博客
+    press_kit: 媒体资源
+  slogan: 独特的问答日记
+  video:
+    button_1: 观看「当格志遇上照片」
+    button_2: 观看「颠覆传统的格志日记」
+  features_head:
+    - 功能
+    - 免费版
+    - 专业版
+  features:
+    - 独特的日记格式
+    - 写作灵感问题库
+    - 照片附件
+    - 阅读模式
+    - 全文搜索
+    - 备份与恢复
+    - 云端输入
+    - 多设备同步（支持 iCloud Drive、Dropbox、WebDAV）
+    - 多种格式导出
+    - 提醒
+    - 密码锁
+    - 自定字体样式
+    - 夜间模式
+    - 支持导出到印象笔记和 Dropbox
+  features_note:
+    - 免费版每篇日记的照片数限制在 5 张。
+    - 免费版不支持设置多个提醒。
+  subscribe_form:
+    title: 订阅更新
+    placeholder: 请输入您的电子邮箱
+    button: 订阅邮件

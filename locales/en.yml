@@ -1,0 +1,38 @@
+---
+en:
+  nav:
+    gallery: Gallery
+    features: Features
+    support: Support
+    blog: blog
+    press_kit: Press Kit
+  slogan: The <strong>simplest</strong> way to get started with keeping a diary.
+  video:
+    button_1: Watch “Grid Diary with Photo”
+    button_2: Watch “Diary Reimagined”
+  features_head:
+    - Features
+    - Basic
+    - Pro
+  features:
+    - Unique grid format
+    - Prompt library for writing inspirations
+    - Photo attachment
+    - Reading mode
+    - Full text search-able
+    - Backup and restore
+    - Cloud Input
+    - Sync (iCloud Drive / Dropbox / WebDAV)
+    - Export in various formats
+    - Reminder
+    - Passcode lock
+    - Customizable font styles
+    - Night mode
+    - Export to Evernote, Dropbox
+  features_note:
+    - The total number of photos that you can attach to diary is limited to 5 in basic version.
+    - Multiple reminders is not available in basic version.
+  subscribe_form:
+    title: Stay in touch
+    placeholder: Enter your email. No spam.
+    button: Subscribe

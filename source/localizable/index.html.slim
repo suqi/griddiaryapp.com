@@ -1,25 +1,30 @@
 header
   .brand
   nav
-    = link_to 'Gallery', '#gallery', data: { behavior: 'smooth-scroll' }
-    = link_to 'Features', '#features', data: { behavior: 'smooth-scroll' }
-    = link_to 'Support', 'https://griddiary.uservoice.com'
-    = link_to 'Blog', 'http://blog.griddiaryapp.com'
-    = link_to 'Press Kit', 'http://griddiary.qiniudn.com/presskit.zip'
+    = link_to t('nav.gallery'),
+      '#gallery',
+      data: { behavior: 'smooth-scroll' }
+    = link_to t('nav.features'),
+      '#features',
+      data: { behavior: 'smooth-scroll' }
+    = link_to t('nav.support'),
+      'https://griddiary.uservoice.com'
+    = link_to t('nav.blog'), 'http://blog.griddiaryapp.com'
+    = link_to t('nav.press_kit'), 'http://griddiary.qiniudn.com/presskit.zip'
 
 .hero
   .content
-    h1 The <strong>simplest</strong> way to get started with keeping a diary.
+    h1 == t('slogan')
     = link_to '', 'https://itunes.apple.com/app/id597077261',
       class: 'download'
 
 .video#gallery
   .video-item[data-behavior='play-video' data-video-url="https://player.vimeo.com/video/104160696?autoplay=1"]
     .preview#video-preview-2
-    button Watch “Grid Diary with Photo”
+    button = t('video.button_1')
   .video-item[data-behavior='play-video' data-video-url="https://player.vimeo.com/video/94643830?autoplay=1"]
     .preview#video-preview-1
-    button Watch “Diary Reimagined”
+    button = t('video.button_2')
 
 .gallery
   - ['Loading', 'Grids', 'Weather_Mood', 'Calendar', 'Edit', 'Readmode', 'Landscape', 'Share_Export', 'Tea'].each do |name|
@@ -30,65 +35,70 @@ header
   table
     thead
       tr
-        th Features
-        th Basic
-        th Pro
+        th = t('features_head')[0]
+        th = t('features_head')[1]
+        th = t('features_head')[2]
     tbody
+      - features = I18n.t('features')
       tr
-        td Unique grid format
-        td.yes
-        td.yes
-      tr
-        td Prompt library for writing inspirations
+        td = features[0]
         td.yes
         td.yes
       tr
-        td Photo attachment
+        td = features[1]
+        td.yes
+        td.yes
+      tr
+        td = features[2]
         td.yes-note1
         td.yes
       tr
-        td Reading mode
+        td = features[3]
         td.yes
         td.yes
       tr
-        td Full text search-able
+        td = features[4]
         td.yes
         td.yes
       tr
-        td Backup and restore
+        td = features[5]
         td.yes
         td.yes
       tr
-        td iCloud sync
+        td = features[6]
         td
         td.yes
       tr
-        td Export in various formats
+        td = features[7]
         td
         td.yes
       tr
-        td Reminder
+        td = features[8]
+        td
+        td.yes
+      tr
+        td = features[9]
         td.yes-note2
         td.yes
       tr
-        td Passcode lock
+        td = features[10]
         td
         td.yes
       tr
-        td Customizable font styles
+        td = features[11]
         td
         td.yes
       tr
-        td Night mode
+        td = features[12]
         td
         td.yes
       tr
-        td Works with Moves, Evernote, Dropbox
+        td = features[13]
         td
         td.yes
   .notes
-    p The total number of photos that you can attach to diary is limited to 5 in basic version.
-    p Multiple reminders is not available in basic version.
+    p = t('features_note')[0]
+    p = t('features_note')[1]
 
 .press
   blockquote
