@@ -101,7 +101,11 @@ header
     p = t('features_note')[1]
 
 .press
-  = partial 'press'
+  - t('press').each do |press|
+    blockquote
+      p = press[:content]
+      cite
+        = link_to press[:author], press[:link]
 
 .subscribe
   = partial 'subscribe_form'

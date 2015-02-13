@@ -36,3 +36,16 @@ en:
     title: Stay in touch
     placeholder: Enter your email. No spam.
     button: Subscribe
+  press:
+    - content: Grid Diary makes keeping a journal as easy as filling out a form.
+      link: 'http://www.techhive.com/article/2055508/grid-diary-makes-keeping-a-journal-as-easy-as-filling-out-a-form.html'
+      author: App Invasion
+    - content: It’s a well-designed, good-looking and intuitive app with a clear purpose.
+      link: 'http://www.insidemobileapps.com/2013/03/13/keep-a-daily-journal-with-grid-diary'
+      author: Inside Mobile Apps
+    - content: If you aren’t the type to just freely write in a diary, … and need some inspiration with what to write, then Grid Diary may be a better fit for you.
+      link: 'http://appadvice.com/review/quickadvice-grid-diary'
+      author: App Advice
+    - content: Grid Diary is a valuable resource to help you keep track of your days on your iPhone.
+      link: 'http://applenapps.com/review/grid-diary-giving-you-daily-incentive-to-write'
+      author: Apple’N’Apps
