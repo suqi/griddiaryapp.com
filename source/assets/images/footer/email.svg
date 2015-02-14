@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>email_F</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-310.000000, 0.000000)" fill="#5A5A5A">
+            <path d="M335,50 C348.807119,50 360,38.8071194 360,25 C360,11.1928806 348.807119,0 335,0 C321.192881,0 310,11.1928806 310,25 C310,38.8071194 321.192881,50 335,50 Z M320.953125,15.9828601 L335.043363,29.1036429 L349,15.9828601 L320.953125,15.9828601 Z M320,17.8924516 L327.798048,25.0503195 L320,32.0727084 L320,17.8924516 Z M350,17.7874361 L350,32.0727079 L341.988514,25.0306728 L350,17.7874361 Z M340.661754,26.2216489 L335.011019,31.4870732 L329.274739,26.2216489 L320.981335,34 L349.040703,34 L340.661754,26.2216489 Z" id="email_F" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

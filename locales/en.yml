@@ -49,3 +49,10 @@ en:
     - content: Grid Diary is a valuable resource to help you keep track of your days on your iPhone.
       link: 'http://applenapps.com/review/grid-diary-giving-you-daily-incentive-to-write'
       author: Apple’N’Apps
+  footer:
+    links:
+      press_kit: Press Kit
+      support_center: Support Center
+      help_us_translate: Help us translate
+      privacy_policy: Privacy Policy
+      terms_of_service: Terms of Service
