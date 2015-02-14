@@ -3,7 +3,8 @@
 @import 'variables';
 
 .hero {
-  @include background-image('hero', 1500px, 608px);
+  @include background-image('hero/en', 1500px, 608px);
+
   height: 964px;
   width: auto;
   background-position: -920px bottom;
@@ -11,6 +12,12 @@
 
   @include min-screen(768px) {
     background-position: center bottom;
+  }
+
+  &.zh {
+    @include background-image('hero/zh', 1500px, 608px);
+    height: 964px;
+    width: auto;
   }
 
   .content {
