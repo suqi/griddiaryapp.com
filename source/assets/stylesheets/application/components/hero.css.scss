@@ -3,21 +3,31 @@
 @import 'variables';
 
 .hero {
-  @include background-image('hero/en', 1500px, 608px);
-
+  @include background-image('hero/en-small', 292px, 596px);
   height: 964px;
   width: auto;
-  background-position: -920px bottom;
-  position: relative;
 
   @include min-screen(768px) {
-    background-position: center bottom;
-  }
-
-  &.zh {
-    @include background-image('hero/zh', 1500px, 608px);
+    @include background-image('hero/en', 1500px, 608px);
     height: 964px;
     width: auto;
+  }
+
+  position: relative;
+  background-position: center bottom;
+
+  &.zh {
+    @include background-image('hero/zh-small', 292px, 596px);
+    height: 890px;
+    width: auto;
+
+    @include min-screen(768px) {
+      @include background-image('hero/zh', 1500px, 608px);
+      height: 964px;
+      width: auto;
+    }
+
+    background-position: center bottom;
   }
 
   .content {
