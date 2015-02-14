@@ -49,3 +49,10 @@ zh:
     - content: 小美觉得日记最重要的作用是让你和自己对话，当你记日记的时候，你才会放慢脚步，反思自己，回味生活。
       link: 'http://zuimeia.com/app/1794'
       author: 最美应用
+  footer:
+    links:
+      press_kit: 媒体资源
+      support_center: 支持中心
+      help_us_translate: 帮助我们翻译
+      privacy_policy: 隐私策略
+      terms_of_service: 使用条款
