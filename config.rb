@@ -7,7 +7,7 @@ activate :autoprefixer, browsers: ['last 2 versions', 'ie 8', 'ie 9']
 
 activate :livereload
 
-activate :i18n, :path => "/:locale/", :mount_at_root => :en
+activate :i18n, :path => "/:locale/", :mount_at_root => false
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'

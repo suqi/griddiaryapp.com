@@ -1,0 +1,9 @@
+javascript:
+  (function() {
+    var language = navigator.language.replace(/-\w*$/, '');
+    if (language == 'zh') {
+      window.location.replace(document.location.href + 'zh');
+    } else {
+      window.location.replace(document.location.href + 'en');
+    }
+  })();
