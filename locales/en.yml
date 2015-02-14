@@ -1,0 +1,58 @@
+---
+en:
+  nav:
+    gallery: Gallery
+    features: Features
+    support: Support
+    blog: blog
+    press_kit: Press Kit
+  slogan: The <strong>simplest</strong> way to get started with keeping a diary.
+  video:
+    button_1: Watch “Grid Diary with Photo”
+    button_2: Watch “Diary Reimagined”
+  features_head:
+    - Features
+    - Basic
+    - Pro
+  features:
+    - Unique grid format
+    - Prompt library for writing inspirations
+    - Photo attachment
+    - Reading mode
+    - Full text search-able
+    - Backup and restore
+    - Cloud Input
+    - Sync (iCloud Drive / Dropbox / WebDAV)
+    - Export in various formats
+    - Reminder
+    - Passcode lock
+    - Customizable font styles
+    - Night mode
+    - Export to Evernote, Dropbox
+  features_note:
+    - The total number of photos that you can attach to diary is limited to 5 in basic version.
+    - Multiple reminders is not available in basic version.
+  subscribe_form:
+    title: Stay in touch
+    placeholder: Enter your email. No spam.
+    button: Subscribe
+  press:
+    - content: Grid Diary makes keeping a journal as easy as filling out a form.
+      link: 'http://www.techhive.com/article/2055508/grid-diary-makes-keeping-a-journal-as-easy-as-filling-out-a-form.html'
+      author: App Invasion
+    - content: It’s a well-designed, good-looking and intuitive app with a clear purpose.
+      link: 'http://www.insidemobileapps.com/2013/03/13/keep-a-daily-journal-with-grid-diary'
+      author: Inside Mobile Apps
+    - content: If you aren’t the type to just freely write in a diary, … and need some inspiration with what to write, then Grid Diary may be a better fit for you.
+      link: 'http://appadvice.com/review/quickadvice-grid-diary'
+      author: App Advice
+    - content: Grid Diary is a valuable resource to help you keep track of your days on your iPhone.
+      link: 'http://applenapps.com/review/grid-diary-giving-you-daily-incentive-to-write'
+      author: Apple’N’Apps
+  footer:
+    links:
+      press_kit: Press Kit
+      support_center: Support Center
+      help_us_translate: Help us translate
+      privacy_policy: Privacy Policy
+      terms_of_service: Terms of Service

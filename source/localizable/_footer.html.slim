@@ -1,0 +1,37 @@
+.footer
+  .links
+    .social
+      = link_to 'https://www.twitter.com/griddiary', class: 'twitter' do
+        = image_tag 'footer/twitter.svg'
+      = link_to 'https://www.facebook.com/griddiary', class: 'facebook' do
+        = image_tag 'footer/facebook.svg'
+      = link_to 'http://weibo.com/griddiary', class: 'weibo' do
+        = image_tag 'footer/weibo.svg'
+      = link_to 'http://weixin.qq.com/r/5UPG3kLEHx9grQa99xb3', class: 'wechat' do
+        .tooltip
+          = image_tag 'wechat.jpg'
+        = image_tag 'footer/wechat.svg'
+      = link_to 'mailto:support@griddiaryapp.com', class: 'email' do
+        = image_tag 'footer/email.svg'
+
+    .others
+      = link_to t('footer.links.press_kit'),
+        'http://griddiary.qiniudn.com/presskit.zip'
+      = link_to t('footer.links.support_center'),
+        'https://griddiary.uservoice.com'
+      = link_to t('footer.links.help_us_translate'),
+        'http://translate.griddiaryapp.com/project/griddiary/invite'
+      = link_to t('footer.links.privacy_policy'),
+        '/support/privacy.html'
+      = link_to t('footer.links.terms_of_service'),
+        '/support/terms.html'
+
+  .language-switcher
+    = link_to 'English', '/en'
+    = link_to '中文', '/zh'
+
+  .copyright
+    p
+      | Copyright © 2013-2015 #{link_to 'Sumi Interactive', "http://sumiapp.com"}.
+      '
+      | All rights reserved.
