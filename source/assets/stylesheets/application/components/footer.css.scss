@@ -7,9 +7,6 @@
 }
 
 .footer > .links {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
   margin: 0 auto;
 
   @include min-screen(768px) {
@@ -18,50 +15,57 @@
 }
 
 .footer > .links > .social {
-  flex: 1 0 auto;
-  overflow: hidden;
-
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  position: relative;
 
   @include min-screen(768px) {
-    flex-flow: row nowrap;
-    flex-basis: auto;
-    justify-content: center;
+    margin: 0 20px;
   }
 
   > a {
-    margin: 5px 0;
+    margin: 5px;
     font-size: 14px;
     text-decoration: none;
     color: $text-color;
-    position: relative;
-    display: block;
 
-    @include min-screen(768px) {
-      margin: 0 20px;
+    &.wechat {
+
+      @include min-screen(768px) {
+        &:hover {
+
+          > .tooltip {
+            opacity: 1;
+          }
+        }
+      }
+
+      > .tooltip {
+        display: none;
+
+        @include min-screen(768px) {
+          display: block;
+          width: 150px;
+          height: 150px;
+          opacity: 0;
+          position: absolute;
+          left: 50%;
+          margin-top: -180px;
+          margin-left: -75px;
+          top: 0;
+          transition: all .5s;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
     }
 
     &:hover {
       color: #31c4cc;
     }
-
-    &.wechat {
-      > .tooltip {
-        opacity: 0;
-        position: absolute;
-        margin: -300px 0 0 0;
-        pointer-events: none;
-      }
-
-      &:hover .tooltip {
-        opacity: 1;
-        pointer-events: auto;
-      }
-    }
   }
+
 }
 
 .footer > .links > .others {
