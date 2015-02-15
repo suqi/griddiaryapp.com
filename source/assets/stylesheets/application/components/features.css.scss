@@ -19,6 +19,12 @@
         th {
           font-size: 18px;
           text-align: left;
+          white-space: pre;
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            text-align: center;
+          }
         }
       }
     }
@@ -37,17 +43,22 @@
             width: 200px;
           }
 
+          &:nth-child(2),
+          &:nth-child(3) {
+            text-align: center;
+          }
+
           &.yes {
-            @include background-image('icons/yes', 24px, 24px);
-            background-position: center left;
+            @include background-image('icons/yes', 32px, 29px);
+            background-position: center center;
           }
           &.yes-note1 {
             @include background-image('icons/yes-note1', 32px, 29px);
-            background-position: center left;
+            background-position: center center;
           }
           &.yes-note2 {
             @include background-image('icons/yes-note2', 32px, 29px);
-            background-position: center left;
+            background-position: center center;
           }
         }
       }
