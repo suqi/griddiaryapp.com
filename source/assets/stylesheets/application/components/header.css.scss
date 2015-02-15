@@ -54,10 +54,9 @@ header {
       right: 0;
       max-height: 0;
       overflow: hidden;
-      border-radius: 0 0 0 10px;
       transition: all .5s;
       a {
-        font-size: 14px;
+        font-size: 16px;
         color: $white;
         background: #31c4cc;
         padding: 0 10px;
@@ -72,11 +71,10 @@ header {
           font-size: 18px;
         }
 
-        &:last-child {
-          border-radius: 0 0 0 10px;
-        }
+        &:active,
         &:hover {
           background: #279ca3;
+          border-radius: 0;
         }
       }
     }
