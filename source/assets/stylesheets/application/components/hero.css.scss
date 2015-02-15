@@ -6,11 +6,13 @@
   @include background-image('hero/en-small', 292px, 596px);
   height: 964px;
   width: auto;
+  margin-top: 50px;
 
   @include min-screen(768px) {
     @include background-image('hero/en', 1500px, 608px);
     height: 964px;
     width: auto;
+    margin-top: 0;
   }
 
   position: relative;

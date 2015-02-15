@@ -3,55 +3,140 @@
 @import 'variables';
 
 header {
-  min-height: 100px;
-  padding: 10px 0;
-  display: flex;
-  flex-flow: column nowrap;
+  height: 51px;
   background-color: $white;
-  align-items: center;
-  justify-content: space-between;
-
-  @include min-screen(768px) {
-    flex-flow: row nowrap;
-  }
+  border-bottom: 1px solid #a4a4a4;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  padding: 5px 10px;
+  box-sizing: border-box;
 
   .brand {
     @include background-image('brand', 227px, 80px);
-
-    @include min-screen(768px) {
-      margin: 0 0 0 5vw;
-    }
+    width: 114px;
+    height: 40px;
+    background-size: 114px 40px;
   }
 
   nav {
-    display: flex;
-    width: 95vw;
-    flex-flow: row nowrap;
-    align-items: center;
-    line-height: 21px;
-    justify-content: space-between;
-    max-width: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
 
-    @include max-screen(767px) {
-      margin-top: 10vw;
-    }
+    .nav-handle {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      padding-top: 15px;
+      text-align: center;
+      color: #333;
+      transition: all .5s;
+      box-sizing: border-box;
 
-    @include min-screen(768px) {
-      padding-right: 5vw;
-    }
-
-    a {
-      font-size: 14px;
-      color: #4A4A4A;
-      text-decoration: none;
-
-      @include min-screen(768px) {
-        font-size: 18px;
+      .bar {
+        display: block;
+        border-radius: 3px;
+        width: 22px;
+        height: 2px;
+        background: #4a4a4a;
+        margin: 4px auto;
       }
+    }
+    .nav-body {
+      position: absolute;
+      z-index: 2;
+      width: 180px;
+      top: 50px;
+      right: 0;
+      max-height: 0;
+      overflow: hidden;
+      border-radius: 0 0 0 10px;
+      transition: all .5s;
+      a {
+        font-size: 14px;
+        color: $white;
+        background: #31c4cc;
+        padding: 0 10px;
+        text-decoration: none;
+        display: block;
+        text-align: right;
+        height: 50px;
+        line-height: 50px;
+        transition: all .5s;
 
-      &:hover {
-        color: #31c4cc;
+        @include min-screen(768px) {
+          font-size: 18px;
+        }
+
+        &:last-child {
+          border-radius: 0 0 0 10px;
+        }
+        &:hover {
+          background: #279ca3;
+        }
+      }
+    }
+
+    &.active {
+      .nav-handle {
+        color: $white;
+        background: #31c4cc;
+
+        .bar {
+          background: $white;
+        }
+      }
+      .nav-body {
+        max-height: 250px;
       }
     }
   }
+
+
+  @include min-screen(768px) {
+    position: static;
+    padding: 10px;
+    height: auto;
+    overflow: hidden;
+
+    .brand {
+      @include background-image('brand', 227px, 80px);
+      float: left;
+    }
+
+    nav {
+      position: static;
+      width: auto;
+      float: right;
+      height: 80px;
+      line-height: 80px;
+
+      .nav-handle {
+        display: none;
+      }
+      .nav-body {
+        width: auto;
+        position: static;
+        max-height: initial;
+
+        a {
+          display: inline-block;
+          background: none;
+          color: #4a4a4a;
+          border-radius: 0;
+          margin-right: 20px;
+
+          &:hover {
+            color: #279ca3;
+            background: none;
+          }
+        }
+      }
+    }
+  }
+
 }

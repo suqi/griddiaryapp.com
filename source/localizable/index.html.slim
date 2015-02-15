@@ -1,16 +1,21 @@
 header
   .brand
   nav
-    = link_to t('nav.gallery'),
-      '#gallery',
-      data: { behavior: 'smooth-scroll' }
-    = link_to t('nav.features'),
-      '#features',
-      data: { behavior: 'smooth-scroll' }
-    = link_to t('nav.support'),
-      'https://griddiary.uservoice.com'
-    = link_to t('nav.blog'), 'http://blog.griddiaryapp.com'
-    = link_to t('nav.press_kit'), 'http://griddiary.qiniudn.com/presskit.zip'
+    .nav-handle
+      .bar
+      .bar
+      .bar
+    .nav-body
+      = link_to t('nav.gallery'),
+        '#gallery',
+        data: { behavior: 'smooth-scroll' }
+      = link_to t('nav.features'),
+        '#features',
+        data: { behavior: 'smooth-scroll' }
+      = link_to t('nav.support'),
+        'https://griddiary.uservoice.com'
+      = link_to t('nav.blog'), 'http://blog.griddiaryapp.com'
+      = link_to t('nav.press_kit'), 'http://griddiary.qiniudn.com/presskit.zip'
 
 .hero[class=I18n.locale]
   .content

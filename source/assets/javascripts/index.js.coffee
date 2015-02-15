@@ -40,3 +40,10 @@ $ ->
     $this.find('button').hide()
 
     event.preventDefault()
+
+$('.nav-handle').on 'click', (e)->
+  $('header nav').toggleClass('active')
+  e.stopPropagation();
+  e.preventDefault()
+$(document).on 'click', (e)->
+  $('header nav').removeClass('active')
