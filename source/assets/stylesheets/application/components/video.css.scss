@@ -26,6 +26,8 @@
     background-position: center;
     max-width: 95vw;
     cursor: pointer;
+    overflow: hidden;
+    text-indent: -9999px;
 
     &#video-preview-1 {
       @include background-image('videos/1', 400px, 235px, 'jpg');

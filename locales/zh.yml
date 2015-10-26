@@ -60,3 +60,23 @@ zh:
       help_us_translate: 帮助我们翻译
       privacy_policy: 隐私策略
       terms_of_service: 使用条款
+  seo:
+    title: 格志日记
+    download: App Store 下载
+    preview2: 当格志遇上照片
+    preview1: 颠覆传统的格志日记
+    loading: 读取中
+    grids: 格子
+    weather_mood: 天气和心情
+    calendar: 日历
+    edit: 编辑
+    readmode: 阅读模式
+    landscape: 横屏模式
+    share_export: 分享和导出
+    tea: 享受
+    twitter: 推特
+    facebook: 脸书
+    weibo: 微博
+    wechat: 微信
+    wechat_qrcode: 微信二维码
+    email: 邮件

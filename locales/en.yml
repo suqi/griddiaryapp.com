@@ -60,3 +60,23 @@ en:
       help_us_translate: Help us translate
       privacy_policy: Privacy Policy
       terms_of_service: Terms of Service
+  seo:
+    title: GridDiary
+    download: App Store Download
+    preview2: Grid Diary with Photo
+    preview1: Diary Reimagined
+    loading: Loading
+    grids: Grids
+    weather_mood: Weather & Mood
+    calendar: Calendar
+    edit: Edit
+    readmode: Readmode
+    landscape: Landscape
+    share_export: Share & Export
+    tea: Enjoy
+    twitter: Twitter
+    facebook: Facebook
+    weibo: Weibo
+    wechat: Wechat
+    wechat_qrcode: Wechat QRcode
+    email: Email

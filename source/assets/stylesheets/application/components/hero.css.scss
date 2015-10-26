@@ -61,6 +61,8 @@
       @include background-image('button-download', 205px, 61px);
       display: block;
       align-self: center;
+      text-indent: -9999px;
+      overflow: hidden;
     }
   }
 }

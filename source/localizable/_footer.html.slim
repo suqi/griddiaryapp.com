@@ -2,17 +2,17 @@
   .links
     .social
       = link_to 'https://www.twitter.com/griddiary', class: 'twitter' do
-        = image_tag 'footer/twitter.svg'
+        = image_tag 'footer/twitter.svg', alt: t('seo.twitter')
       = link_to 'https://www.facebook.com/griddiary', class: 'facebook' do
-        = image_tag 'footer/facebook.svg'
+        = image_tag 'footer/facebook.svg', alt: t('seo.facebook')
       = link_to 'http://weibo.com/griddiary', class: 'weibo' do
-        = image_tag 'footer/weibo.svg'
+        = image_tag 'footer/weibo.svg', alt: t('seo.weibo')
       = link_to 'http://weixin.qq.com/r/5UPG3kLEHx9grQa99xb3', class: 'wechat' do
         .tooltip
-          = image_tag 'wechat.jpg'
-        = image_tag 'footer/wechat.svg'
+          = image_tag 'wechat.jpg', alt: t('seo.wechat_qrcode')
+        = image_tag 'footer/wechat.svg', alt: t('seo.wechat')
       = link_to 'mailto:support@griddiaryapp.com', class: 'email' do
-        = image_tag 'footer/email.svg'
+        = image_tag 'footer/email.svg', alt: t('seo.email')
 
     .others
       = link_to t('footer.links.press_kit'),

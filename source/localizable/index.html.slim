@@ -1,5 +1,5 @@
 header
-  .brand
+  .brand == t('seo.title')
   nav
     .nav-handle
       .bar
@@ -20,21 +20,30 @@ header
 .hero[class=I18n.locale]
   .content
     h1 == t('slogan')
-    = link_to '', 'https://itunes.apple.com/app/id597077261',
-      class: 'download'
+    = link_to t('seo.download'), 'https://itunes.apple.com/app/id597077261', class: 'download'
 
 .video#gallery
   .video-item[data-behavior='play-video' data-video-url="https://player.vimeo.com/video/104160696?autoplay=1"]
-    .preview#video-preview-2
+    .preview#video-preview-2 == t('seo.preview2')
     button = t('video.button_1')
   .video-item[data-behavior='play-video' data-video-url="https://player.vimeo.com/video/94643830?autoplay=1"]
-    .preview#video-preview-1
+    .preview#video-preview-1 == t('seo.preview1')
     button = t('video.button_2')
 
 .gallery
-  - ['Loading', 'Grids', 'Weather_Mood', 'Calendar', 'Edit', 'Readmode', 'Landscape', 'Share_Export', 'Tea'].each do |name|
-    = link_to image_path("gallery/#{name}@2x.jpg") do
-      = image_tag "gallery/#{name}-thumb.jpg", title: name
+  - {\
+      Loading:       t('seo.loading'),\
+      Grids:         t('seo.grids'),\
+      Weather_Mood:  t('seo.weather_mood'),\
+      Calendar:      t('seo.calendar'),\
+      Edit:          t('seo.edit'),\
+      Readmode:      t('seo.readmode'),\
+      Landscape:     t('seo.landscape'),\
+      Share_Export:  t('seo.share_export'),\
+      Tea:           t('seo.tea')\
+    }.each do |key, value|
+    = link_to image_path("gallery/#{key}@2x.jpg") do
+      = image_tag "gallery/#{key}-thumb.jpg", title: value, alt: value
 
 .features#features
   table
