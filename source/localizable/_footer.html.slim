@@ -35,3 +35,13 @@
       | Copyright © 2013-2015 #{link_to 'Sumi Interactive', "http://sumiapp.com"}.
       '
       | All rights reserved.
+      br
+      span 闽ICP备14017972号-2
+
+javascript:
+  (function() {
+    var language = navigator.language.replace(/-\w*$/, '');
+    if (language != 'zh') {
+      document.querySelector('.copyright span').style.display = 'none';
+    }
+  })();

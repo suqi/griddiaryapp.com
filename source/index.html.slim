@@ -2,8 +2,8 @@ javascript:
   (function() {
     var language = navigator.language.replace(/-\w*$/, '');
     if (language == 'zh') {
-      window.location.replace('http://' + window.location.host + window.location.pathname + '/zh/');
+      window.location.replace('http://' + window.location.host + window.location.pathname + 'zh/');
     } else {
-      window.location.replace('http://' + window.location.host + window.location.pathname + '/en/');
+      window.location.replace('http://' + window.location.host + window.location.pathname + 'en/');
     }
   })();
