@@ -40,8 +40,7 @@
 
 javascript:
   (function() {
-    var language = navigator.language.replace(/-\w*$/, '');
-    if (language != 'zh') {
+    if (location.href.indexOf('zh') < 0) {
       document.querySelector('.copyright span').style.display = 'none';
     }
   })();
