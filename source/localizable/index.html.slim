@@ -17,6 +17,9 @@ header
       = link_to t('nav.blog'), 'http://blog.griddiaryapp.com'
       = link_to t('nav.press_kit'), 'http://griddiary.qiniudn.com/presskit.zip'
 
+= link_to 'https://itunes.apple.com/app/id597077261', id: 'special-offer' do
+  = image_tag t('special-offer-image-url'), title: 'special-offer', alt: 'special offer'
+
 .hero[class=I18n.locale]
   .content
     h1 == t('slogan')

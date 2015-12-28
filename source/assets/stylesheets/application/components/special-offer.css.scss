@@ -1,0 +1,24 @@
+@import 'mixins/images';
+@import 'mixins/media-queries';
+@import 'variables';
+
+#special-offer {
+  display: block;
+  margin-top: 50px;
+  @include background-image(special-offer-bg, 100%, 156px);
+  background-repeat: repeat-x;
+  background-size: initial;
+  text-align: center;
+  line-height: 156px;
+  overflow: hidden;
+
+  img {
+    margin: 0 auto;
+    max-width: 70%;
+    vertical-align: middle;
+  }
+
+  @include min-screen(768px) {
+    margin-top: 0;
+  }
+}
