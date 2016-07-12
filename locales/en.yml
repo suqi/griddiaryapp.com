@@ -26,6 +26,7 @@ en:
     - Full text search-able
     - Backup and restore
     - Cloud Input
+    - Multiple Templates
     - Sync (iCloud Drive / Dropbox / WebDAV)
     - Export in various formats
     - Reminder
