@@ -6,6 +6,7 @@ gem "middleman", "~>3.4.0"
 gem "middleman-livereload"
 
 gem 'middleman-slim'
-gem "middleman-deploy"
 gem "middleman-autoprefixer"
 gem "middleman-imageoptim"
+
+gem "mgd"
